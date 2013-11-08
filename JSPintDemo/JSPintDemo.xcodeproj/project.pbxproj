@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8B2297E16213B75003A269E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B2297D16213B75003A269E /* UIKit.framework */; };
+		F8B2298016213B75003A269E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B2297F16213B75003A269E /* Foundation.framework */; };
+		F8B2298216213B75003A269E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B2298116213B75003A269E /* CoreGraphics.framework */; };
+		F8B2298816213B75003A269E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8B2298616213B75003A269E /* InfoPlist.strings */; };
+		F8B2298A16213B75003A269E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B2298916213B75003A269E /* main.m */; };
+		F8B2298E16213B75003A269E /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B2298D16213B75003A269E /* JDAppDelegate.m */; };
+		F8B2299016213B75003A269E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B2298F16213B75003A269E /* Default.png */; };
+		F8B2299216213B75003A269E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B2299116213B75003A269E /* Default@2x.png */; };
+		F8B2299416213B75003A269E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B2299316213B75003A269E /* Default-568h@2x.png */; };
+		F8B2299716213B75003A269E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B2299516213B75003A269E /* MainStoryboard.storyboard */; };
+		F8B229A51621412C003A269E /* PintCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B229A31621412C003A269E /* PintCollectionViewLayout.m */; };
+		F8B229A816221CD0003A269E /* JDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B229A716221CD0003A269E /* JDViewController.m */; };
+		F8B229AB16222887003A269E /* PNCollectionCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B229AA16222887003A269E /* PNCollectionCellBackgroundView.m */; };
+		F8B229AD1622294C003A269E /* baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8B229AC1622294C003A269E /* baby.jpg */; };
+		F8B229B1162230C2003A269E /* bodegahead.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B229AE162230C2003A269E /* bodegahead.png */; };
+		F8B229B2162230C2003A269E /* egret.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B229AF162230C2003A269E /* egret.png */; };
+		F8B229B3162230C2003A269E /* pinkprius.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8B229B0162230C2003A269E /* pinkprius.jpg */; };
+		F8B229B516223117003A269E /* danielle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8B229B416223117003A269E /* danielle.jpg */; };
+		F8B229B716223161003A269E /* betceemay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8B229B616223161003A269E /* betceemay.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8B2297916213B75003A269E /* JSPintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSPintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B2297D16213B75003A269E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8B2297F16213B75003A269E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8B2298116213B75003A269E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8B2298516213B75003A269E /* JSPintDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSPintDemo-Info.plist"; sourceTree = "<group>"; };
+		F8B2298716213B75003A269E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8B2298916213B75003A269E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8B2298B16213B75003A269E /* JSPintDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSPintDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F8B2298C16213B75003A269E /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		F8B2298D16213B75003A269E /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
+		F8B2298F16213B75003A269E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F8B2299116213B75003A269E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F8B2299316213B75003A269E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F8B2299616213B75003A269E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F8B229A31621412C003A269E /* PintCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PintCollectionViewLayout.m; sourceTree = "<group>"; };
+		F8B229A41621412C003A269E /* PintCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PintCollectionViewLayout.h; sourceTree = "<group>"; };
+		F8B229A616221CD0003A269E /* JDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDViewController.h; sourceTree = "<group>"; };
+		F8B229A716221CD0003A269E /* JDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDViewController.m; sourceTree = "<group>"; };
+		F8B229A916222887003A269E /* PNCollectionCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCollectionCellBackgroundView.h; sourceTree = "<group>"; };
+		F8B229AA16222887003A269E /* PNCollectionCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCollectionCellBackgroundView.m; sourceTree = "<group>"; };
+		F8B229AC1622294C003A269E /* baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby.jpg; sourceTree = "<group>"; };
+		F8B229AE162230C2003A269E /* bodegahead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bodegahead.png; sourceTree = "<group>"; };
+		F8B229AF162230C2003A269E /* egret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egret.png; sourceTree = "<group>"; };
+		F8B229B0162230C2003A269E /* pinkprius.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pinkprius.jpg; sourceTree = "<group>"; };
+		F8B229B416223117003A269E /* danielle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = danielle.jpg; sourceTree = "<group>"; };
+		F8B229B616223161003A269E /* betceemay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = betceemay.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8B2297616213B75003A269E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B2297E16213B75003A269E /* UIKit.framework in Frameworks */,
+				F8B2298016213B75003A269E /* Foundation.framework in Frameworks */,
+				F8B2298216213B75003A269E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8B2296E16213B75003A269E = {
+			isa = PBXGroup;
+			children = (
+				F8B2298316213B75003A269E /* JSPintDemo */,
+				F8B2297C16213B75003A269E /* Frameworks */,
+				F8B2297A16213B75003A269E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8B2297A16213B75003A269E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2297916213B75003A269E /* JSPintDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8B2297C16213B75003A269E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2297D16213B75003A269E /* UIKit.framework */,
+				F8B2297F16213B75003A269E /* Foundation.framework */,
+				F8B2298116213B75003A269E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8B2298316213B75003A269E /* JSPintDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F8B229B416223117003A269E /* danielle.jpg */,
+				F8B229AE162230C2003A269E /* bodegahead.png */,
+				F8B229AF162230C2003A269E /* egret.png */,
+				F8B229B0162230C2003A269E /* pinkprius.jpg */,
+				F8B229B616223161003A269E /* betceemay.jpg */,
+				F8B229AC1622294C003A269E /* baby.jpg */,
+				F8B229A916222887003A269E /* PNCollectionCellBackgroundView.h */,
+				F8B229AA16222887003A269E /* PNCollectionCellBackgroundView.m */,
+				F8B2299516213B75003A269E /* MainStoryboard.storyboard */,
+				F8B2298C16213B75003A269E /* JDAppDelegate.h */,
+				F8B2298D16213B75003A269E /* JDAppDelegate.m */,
+				F8B229A616221CD0003A269E /* JDViewController.h */,
+				F8B229A716221CD0003A269E /* JDViewController.m */,
+				F8B229A31621412C003A269E /* PintCollectionViewLayout.m */,
+				F8B229A41621412C003A269E /* PintCollectionViewLayout.h */,
+				F8B2298416213B75003A269E /* Supporting Files */,
+			);
+			path = JSPintDemo;
+			sourceTree = "<group>";
+		};
+		F8B2298416213B75003A269E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2298516213B75003A269E /* JSPintDemo-Info.plist */,
+				F8B2298616213B75003A269E /* InfoPlist.strings */,
+				F8B2298916213B75003A269E /* main.m */,
+				F8B2298B16213B75003A269E /* JSPintDemo-Prefix.pch */,
+				F8B2298F16213B75003A269E /* Default.png */,
+				F8B2299116213B75003A269E /* Default@2x.png */,
+				F8B2299316213B75003A269E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8B2297816213B75003A269E /* JSPintDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B2299D16213B75003A269E /* Build configuration list for PBXNativeTarget "JSPintDemo" */;
+			buildPhases = (
+				F8B2297516213B75003A269E /* Sources */,
+				F8B2297616213B75003A269E /* Frameworks */,
+				F8B2297716213B75003A269E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSPintDemo;
+			productName = JSPintDemo;
+			productReference = F8B2297916213B75003A269E /* JSPintDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8B2297016213B75003A269E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JD;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Fall Creek Software";
+			};
+			buildConfigurationList = F8B2297316213B75003A269E /* Build configuration list for PBXProject "JSPintDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8B2296E16213B75003A269E;
+			productRefGroup = F8B2297A16213B75003A269E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8B2297816213B75003A269E /* JSPintDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8B2297716213B75003A269E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B2298816213B75003A269E /* InfoPlist.strings in Resources */,
+				F8B2299016213B75003A269E /* Default.png in Resources */,
+				F8B2299216213B75003A269E /* Default@2x.png in Resources */,
+				F8B2299416213B75003A269E /* Default-568h@2x.png in Resources */,
+				F8B2299716213B75003A269E /* MainStoryboard.storyboard in Resources */,
+				F8B229AD1622294C003A269E /* baby.jpg in Resources */,
+				F8B229B1162230C2003A269E /* bodegahead.png in Resources */,
+				F8B229B2162230C2003A269E /* egret.png in Resources */,
+				F8B229B3162230C2003A269E /* pinkprius.jpg in Resources */,
+				F8B229B516223117003A269E /* danielle.jpg in Resources */,
+				F8B229B716223161003A269E /* betceemay.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8B2297516213B75003A269E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B2298A16213B75003A269E /* main.m in Sources */,
+				F8B2298E16213B75003A269E /* JDAppDelegate.m in Sources */,
+				F8B229A51621412C003A269E /* PintCollectionViewLayout.m in Sources */,
+				F8B229A816221CD0003A269E /* JDViewController.m in Sources */,
+				F8B229AB16222887003A269E /* PNCollectionCellBackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8B2298616213B75003A269E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B2298716213B75003A269E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8B2299516213B75003A269E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B2299616213B75003A269E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8B2299B16213B75003A269E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F8B2299C16213B75003A269E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8B2299E16213B75003A269E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSPintDemo/JSPintDemo-Prefix.pch";
+				INFOPLIST_FILE = "JSPintDemo/JSPintDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8B2299F16213B75003A269E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSPintDemo/JSPintDemo-Prefix.pch";
+				INFOPLIST_FILE = "JSPintDemo/JSPintDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8B2297316213B75003A269E /* Build configuration list for PBXProject "JSPintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B2299B16213B75003A269E /* Debug */,
+				F8B2299C16213B75003A269E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B2299D16213B75003A269E /* Build configuration list for PBXNativeTarget "JSPintDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B2299E16213B75003A269E /* Debug */,
+				F8B2299F16213B75003A269E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8B2297016213B75003A269E /* Project object */;
+}
