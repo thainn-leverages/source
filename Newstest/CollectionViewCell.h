@@ -14,5 +14,6 @@
 
 //テスト用に表示させるテキストラベル
 @property (nonatomic,retain) UILabel *captionLabel;
+@property (nonatomic,retain) UIImage *image;
 
 @end

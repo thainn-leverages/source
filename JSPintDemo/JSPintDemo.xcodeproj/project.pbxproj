@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0730128C182CC61F0034E875 /* DetailnewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0730128B182CC61F0034E875 /* DetailnewsViewController.m */; };
+		0730128F182CCBAC0034E875 /* menu-bar@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0730128D182CCBAC0034E875 /* menu-bar@1x.png */; };
+		07301290182CCBAC0034E875 /* menu-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0730128E182CCBAC0034E875 /* menu-bar@2x.png */; };
+		07301292182CCCB40034E875 /* back-button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07301291182CCCB30034E875 /* back-button@1x.png */; };
+		07301294182CCCC90034E875 /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07301293182CCCC90034E875 /* back-button@2x.png */; };
 		F8B2297E16213B75003A269E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B2297D16213B75003A269E /* UIKit.framework */; };
 		F8B2298016213B75003A269E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B2297F16213B75003A269E /* Foundation.framework */; };
 		F8B2298216213B75003A269E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B2298116213B75003A269E /* CoreGraphics.framework */; };
@@ -29,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0730128A182CC61F0034E875 /* DetailnewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailnewsViewController.h; sourceTree = "<group>"; };
+		0730128B182CC61F0034E875 /* DetailnewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailnewsViewController.m; sourceTree = "<group>"; };
+		0730128D182CCBAC0034E875 /* menu-bar@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bar@1x.png"; sourceTree = "<group>"; };
+		0730128E182CCBAC0034E875 /* menu-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bar@2x.png"; sourceTree = "<group>"; };
+		07301291182CCCB30034E875 /* back-button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@1x.png"; sourceTree = "<group>"; };
+		07301293182CCCC90034E875 /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
 		F8B2297916213B75003A269E /* JSPintDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSPintDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B2297D16213B75003A269E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F8B2297F16213B75003A269E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +85,8 @@
 		F8B2296E16213B75003A269E = {
 			isa = PBXGroup;
 			children = (
+				0730128A182CC61F0034E875 /* DetailnewsViewController.h */,
+				0730128B182CC61F0034E875 /* DetailnewsViewController.m */,
 				F8B2298316213B75003A269E /* JSPintDemo */,
 				F8B2297C16213B75003A269E /* Frameworks */,
 				F8B2297A16213B75003A269E /* Products */,
@@ -101,6 +114,10 @@
 		F8B2298316213B75003A269E /* JSPintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				07301291182CCCB30034E875 /* back-button@1x.png */,
+				07301293182CCCC90034E875 /* back-button@2x.png */,
+				0730128D182CCBAC0034E875 /* menu-bar@1x.png */,
+				0730128E182CCBAC0034E875 /* menu-bar@2x.png */,
 				F8B229B416223117003A269E /* danielle.jpg */,
 				F8B229AE162230C2003A269E /* bodegahead.png */,
 				F8B229AF162230C2003A269E /* egret.png */,
@@ -198,6 +215,10 @@
 				F8B229B3162230C2003A269E /* pinkprius.jpg in Resources */,
 				F8B229B516223117003A269E /* danielle.jpg in Resources */,
 				F8B229B716223161003A269E /* betceemay.jpg in Resources */,
+				0730128F182CCBAC0034E875 /* menu-bar@1x.png in Resources */,
+				07301290182CCBAC0034E875 /* menu-bar@2x.png in Resources */,
+				07301292182CCCB40034E875 /* back-button@1x.png in Resources */,
+				07301294182CCCC90034E875 /* back-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +234,7 @@
 				F8B229A51621412C003A269E /* PintCollectionViewLayout.m in Sources */,
 				F8B229A816221CD0003A269E /* JDViewController.m in Sources */,
 				F8B229AB16222887003A269E /* PNCollectionCellBackgroundView.m in Sources */,
+				0730128C182CC61F0034E875 /* DetailnewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +318,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSPintDemo/JSPintDemo-Prefix.pch";
 				INFOPLIST_FILE = "JSPintDemo/JSPintDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -308,8 +331,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSPintDemo/JSPintDemo-Prefix.pch";
 				INFOPLIST_FILE = "JSPintDemo/JSPintDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

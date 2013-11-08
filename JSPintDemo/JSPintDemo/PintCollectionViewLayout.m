@@ -88,7 +88,7 @@
     self.interitemSpacing = 10.0;
     self.itemHeight = 50.0;
     self.columnWidth = 50.0;
-    self.numberOfColumns = 3;
+    self.numberOfColumns = 2;
 }
 
 

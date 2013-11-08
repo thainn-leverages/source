@@ -10,11 +10,14 @@
 #import "PSCollectionViewCell.h"
 #import "CollectionViewCell.h"
 
+
 @interface travelViewController ()
+@property (strong,nonatomic) NSMutableArray* photoList;
 
 @end
 
 @implementation travelViewController
+
 
 - (void)viewDidLoad
 {
@@ -22,15 +25,39 @@
     
     //セルに表示する文字列を格納する配列
     self.items = [NSMutableArray array];
+
+    self.photoList = [NSMutableArray arrayWithCapacity:1];
+    [self.photoList addObject:@"danielle.jpg"];
+    [self.photoList addObject:@"bodegahead.png"];
+    [self.photoList addObject:@"egret.png"];
+    [self.photoList addObject:@"betceemay.jpg"];
+    [self.photoList addObject:@"baby.jpg"];
+    [self.photoList addObject:@"danielle.jpg"];
+    [self.photoList addObject:@"bodegahead.png"];
+    [self.photoList addObject:@"egret.png"];
+    [self.photoList addObject:@"betceemay.jpg"];
+    [self.photoList addObject:@"baby.jpg"];
+    [self.photoList addObject:@"danielle.jpg"];
+    [self.photoList addObject:@"bodegahead.png"];
+    [self.photoList addObject:@"egret.png"];
+    [self.photoList addObject:@"betceemay.jpg"];
+    [self.photoList addObject:@"baby.jpg"];
+  //  NSLog(@"%@", _photoList);
     
     //配列にオブジェクトを挿入
-    for (int i=0;  i<50; i++) {
+    for (int i=0;  i<6; i++) {
         
-        NSString *name = [NSString stringWithFormat:@"PICT %d",i];
+     //   NSString *name = [NSString stringWithFormat:@"PICT %d",i];
+        
+     
+      //  UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.photoList[i]]];
+        
+      //  UIImage *imageView = [[UIImage alloc]init]
         NSNumber *height = @(70 + arc4random() % 90);
-        NSDictionary *dictionary = @{@"name":name,@"height":height};
+        NSDictionary *dictionary = @{@"image":[self.photoList objectAtIndex:i],@"height":height};
         
         [self.items addObject:dictionary];
+        //NSLog(@"%@", self.items);
     }
     
     //collectionView生成
@@ -81,6 +108,8 @@
     
     return cell;
 }
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

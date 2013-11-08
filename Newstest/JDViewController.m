@@ -6,9 +6,6 @@
 //
 
 #import "JDViewController.h"
-#include "DetailnewsViewController.h"
-
-
 
 @interface JDViewController ()
 @property (strong,nonatomic) IBOutlet UICollectionView *collectionView;
@@ -17,7 +14,7 @@
 
 #define kCollectionCellBorderTop 17.0
 #define kCollectionCellBorderBottom 17.0
-#define kCollectionCellBorderLeft 0.0
+#define kCollectionCellBorderLeft 17.0
 #define kCollectionCellBorderRight 17.0
 
 
@@ -48,7 +45,7 @@
     
     // set inter-item spacing in the layout
     PintCollectionViewLayout* customLayout = (PintCollectionViewLayout*)self.collectionView.collectionViewLayout;
-    customLayout.interitemSpacing = 10.0;
+    customLayout.interitemSpacing = 14.0;
 
     // make up some test data
     self.photoList = [NSMutableArray arrayWithCapacity:1];
@@ -109,7 +106,7 @@
 
 - (NSUInteger)maximumNumberOfColumnsForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
 {
-    NSUInteger numColumns =2;
+    NSUInteger numColumns = 2;
 
     return numColumns;
 }
@@ -165,22 +162,6 @@
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)collectionView
 {
     return 1;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-
-  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    DetailnewsViewController *viewController = (DetailnewsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"detailview"];
-    
-
-    
-   [self setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    viewController.tabledata = [self.photoList objectAtIndex:indexPath.row];
-    
-    //[self.navigationController pushViewController:viewController animated:YES];
-    [self presentViewController:viewController animated:YES completion:nil];
-
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView*)collectionView cellForItemAtIndexPath:(NSIndexPath*)indexPath

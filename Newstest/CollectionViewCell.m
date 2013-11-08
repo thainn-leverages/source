@@ -17,10 +17,11 @@
     if (self) {
         //背景色とテキストラベル設定
         self.backgroundColor = [UIColor lightGrayColor];
-        self.captionLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.captionLabel.backgroundColor = [UIColor greenColor];
+       
+       // self.captionLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+      //  self.captionLabel.backgroundColor = [UIColor greenColor];
         
-        [self addSubview:self.captionLabel];
+       // [self addSubview:self.captionLabel];
     }
     return self;
 }
@@ -31,26 +32,29 @@
     [super prepareForReuse];
     
     //テキストラベルをクリア
-    self.captionLabel.text = nil;
+   // self.captionLabel.text = nil;
 }
 
 //サブビューのレイアウト
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    self.captionLabel.frame = CGRectInset(self.bounds, 4, 4);
+    //self.captionLabel.frame = CGRectInset(self.bounds, 4, 4);
 }
 
 //表示処理
 - (void)collectionView:(PSCollectionView *)collectionView fillCellWithObject:(id)object atIndex:(NSInteger)index
 {
     [super collectionView:collectionView fillCellWithObject:object atIndex:index];
-    
+
     //オブジェクトから値を取り出す
-    NSString *name = object[@"name"];
-    
-    //テキストラベルに挿入
-    self.captionLabel.text = name;
+  //  NSString *name = object[@"image"];
+    UIImage *image = [UIImage imageNamed: object[@"image"]];
+
+   // self.captionLabel.text = name;
+    self.image = image;
+    //NSLog(@"%@", self.image);
+
 }
 
 //セルの高さ設定
