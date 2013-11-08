@@ -104,7 +104,7 @@
 
 - (CGFloat)columnWidthForCollectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*)collectionViewLayout
 {
-    return 130;
+    return 222;
 }
 
 - (NSUInteger)maximumNumberOfColumnsForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
@@ -124,7 +124,9 @@
     CGSize rctSizeFinal = CGSizeMake(rctSizeOriginal.width * scale,rctSizeOriginal.height * scale);
     imageView.frame = CGRectMake(kCollectionCellBorderLeft,kCollectionCellBorderTop,rctSizeFinal.width,rctSizeFinal.height);
 
-    CGFloat height = imageView.bounds.size.height +50;
+    CGFloat height = imageView.bounds.size.height+100;
+    
+  //  NSLog(@"%f", height);
     
     return height;
 }
@@ -209,7 +211,7 @@
     
     [cell.contentView addSubview:imageView];
      
-    CGRect rctLabel = CGRectMake(kCollectionCellBorderLeft,kCollectionCellBorderTop + rctSizeFinal.height + 5,rctSizeFinal.width,65);
+    CGRect rctLabel = CGRectMake(kCollectionCellBorderLeft,kCollectionCellBorderTop + rctSizeFinal.height + 10,rctSizeFinal.width,65);
     
     UILabel* label = [[UILabel alloc] initWithFrame:rctLabel];
     label.numberOfLines = 0;

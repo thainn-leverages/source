@@ -86,7 +86,7 @@
     // set default values for all properties
     self.lineSpacing = 10.0;
     self.interitemSpacing = 10.0;
-    self.itemHeight = 50.0;
+    self.itemHeight = 10.0;
     self.columnWidth = 50.0;
     self.numberOfColumns = 2;
 }
