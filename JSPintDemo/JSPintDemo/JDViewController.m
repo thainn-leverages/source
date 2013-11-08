@@ -15,10 +15,10 @@
 @property (strong,nonatomic) NSMutableArray* photoList;
 @end
 
-#define kCollectionCellBorderTop 17.0
-#define kCollectionCellBorderBottom 17.0
+#define kCollectionCellBorderTop 0.0
+#define kCollectionCellBorderBottom 0.0
 #define kCollectionCellBorderLeft 0.0
-#define kCollectionCellBorderRight 17.0
+#define kCollectionCellBorderRight 0.0
 
 
 @implementation JDViewController
@@ -104,7 +104,7 @@
 
 - (CGFloat)columnWidthForCollectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*)collectionViewLayout
 {
-    return 222.0;
+    return 130.0;
 }
 
 - (NSUInteger)maximumNumberOfColumnsForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
@@ -120,7 +120,7 @@
     
     UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.photoList[index]]];
     CGSize rctSizeOriginal = imageView.bounds.size;
-    double scale = (222  - (kCollectionCellBorderLeft + kCollectionCellBorderRight)) / rctSizeOriginal.width;
+    double scale = (130  - (kCollectionCellBorderLeft + kCollectionCellBorderRight)) / rctSizeOriginal.width;
     CGSize rctSizeFinal = CGSizeMake(rctSizeOriginal.width * scale,rctSizeOriginal.height * scale);
     imageView.frame = CGRectMake(kCollectionCellBorderLeft,kCollectionCellBorderTop,rctSizeFinal.width,rctSizeFinal.height);
 
