@@ -104,7 +104,7 @@
 
 - (CGFloat)columnWidthForCollectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*)collectionViewLayout
 {
-    return 130.0;
+    return 130;
 }
 
 - (NSUInteger)maximumNumberOfColumnsForCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout
@@ -120,11 +120,11 @@
     
     UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.photoList[index]]];
     CGSize rctSizeOriginal = imageView.bounds.size;
-    double scale = (130  - (kCollectionCellBorderLeft + kCollectionCellBorderRight)) / rctSizeOriginal.width;
+    double scale = (222  - (kCollectionCellBorderLeft + kCollectionCellBorderRight)) / rctSizeOriginal.width;
     CGSize rctSizeFinal = CGSizeMake(rctSizeOriginal.width * scale,rctSizeOriginal.height * scale);
     imageView.frame = CGRectMake(kCollectionCellBorderLeft,kCollectionCellBorderTop,rctSizeFinal.width,rctSizeFinal.height);
 
-    CGFloat height = imageView.bounds.size.height + 100;
+    CGFloat height = imageView.bounds.size.height +50;
     
     return height;
 }
@@ -213,7 +213,7 @@
     
     UILabel* label = [[UILabel alloc] initWithFrame:rctLabel];
     label.numberOfLines = 0;
-    label.font = [UIFont systemFontOfSize:12];
+    label.font = [UIFont systemFontOfSize:13];
 
     label.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
     
