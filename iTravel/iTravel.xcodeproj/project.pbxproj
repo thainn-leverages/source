@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07356A1A1830A13F00D88EC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07356A191830A13E00D88EC6 /* UIKit.framework */; };
+		07356A1C1830A13F00D88EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07356A1B1830A13F00D88EC6 /* Foundation.framework */; };
+		07356A1E1830A13F00D88EC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07356A1D1830A13F00D88EC6 /* CoreGraphics.framework */; };
+		07356A241830A13F00D88EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07356A221830A13F00D88EC6 /* InfoPlist.strings */; };
+		07356A261830A13F00D88EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07356A251830A13F00D88EC6 /* main.m */; };
+		07356A2A1830A13F00D88EC6 /* iTravelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07356A291830A13F00D88EC6 /* iTravelAppDelegate.m */; };
+		07356A331830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */; };
+		07356A361830A13F00D88EC6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07356A341830A13F00D88EC6 /* MainStoryboard_iPad.storyboard */; };
+		07356A391830A13F00D88EC6 /* iTravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07356A381830A13F00D88EC6 /* iTravelViewController.m */; };
+		07356A421830BBED00D88EC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A3F1830BBED00D88EC6 /* Default-568h@2x.png */; };
+		07356A431830BBED00D88EC6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A401830BBED00D88EC6 /* Default.png */; };
+		07356A441830BBED00D88EC6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A411830BBED00D88EC6 /* Default@2x.png */; };
+		07356A471830BD0400D88EC6 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A451830BD0400D88EC6 /* icon57.png */; };
+		07356A481830BD0400D88EC6 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A461830BD0400D88EC6 /* icon114.png */; };
+		07356A4A1830BD2500D88EC6 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A491830BD2500D88EC6 /* icon57.png */; };
+		07356A4C1830BD2E00D88EC6 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A4B1830BD2E00D88EC6 /* icon114.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07356A161830A13E00D88EC6 /* iTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07356A191830A13E00D88EC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07356A1B1830A13F00D88EC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07356A1D1830A13F00D88EC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07356A211830A13F00D88EC6 /* iTravel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTravel-Info.plist"; sourceTree = "<group>"; };
+		07356A231830A13F00D88EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07356A251830A13F00D88EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07356A271830A13F00D88EC6 /* iTravel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTravel-Prefix.pch"; sourceTree = "<group>"; };
+		07356A281830A13F00D88EC6 /* iTravelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTravelAppDelegate.h; sourceTree = "<group>"; };
+		07356A291830A13F00D88EC6 /* iTravelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTravelAppDelegate.m; sourceTree = "<group>"; };
+		07356A2B1830A13F00D88EC6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		07356A2D1830A13F00D88EC6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		07356A2F1830A13F00D88EC6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		07356A321830A13F00D88EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		07356A351830A13F00D88EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		07356A371830A13F00D88EC6 /* iTravelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTravelViewController.h; sourceTree = "<group>"; };
+		07356A381830A13F00D88EC6 /* iTravelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTravelViewController.m; sourceTree = "<group>"; };
+		07356A3F1830BBED00D88EC6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		07356A401830BBED00D88EC6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		07356A411830BBED00D88EC6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		07356A451830BD0400D88EC6 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		07356A461830BD0400D88EC6 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		07356A491830BD2500D88EC6 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		07356A4B1830BD2E00D88EC6 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07356A131830A13E00D88EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07356A1A1830A13F00D88EC6 /* UIKit.framework in Frameworks */,
+				07356A1C1830A13F00D88EC6 /* Foundation.framework in Frameworks */,
+				07356A1E1830A13F00D88EC6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07356A0D1830A13E00D88EC6 = {
+			isa = PBXGroup;
+			children = (
+				07356A4B1830BD2E00D88EC6 /* icon114.png */,
+				07356A491830BD2500D88EC6 /* icon57.png */,
+				07356A1F1830A13F00D88EC6 /* iTravel */,
+				07356A181830A13E00D88EC6 /* Frameworks */,
+				07356A171830A13E00D88EC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07356A171830A13E00D88EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07356A161830A13E00D88EC6 /* iTravel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07356A181830A13E00D88EC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07356A191830A13E00D88EC6 /* UIKit.framework */,
+				07356A1B1830A13F00D88EC6 /* Foundation.framework */,
+				07356A1D1830A13F00D88EC6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07356A1F1830A13F00D88EC6 /* iTravel */ = {
+			isa = PBXGroup;
+			children = (
+				07356A451830BD0400D88EC6 /* icon57.png */,
+				07356A461830BD0400D88EC6 /* icon114.png */,
+				07356A3F1830BBED00D88EC6 /* Default-568h@2x.png */,
+				07356A401830BBED00D88EC6 /* Default.png */,
+				07356A411830BBED00D88EC6 /* Default@2x.png */,
+				07356A281830A13F00D88EC6 /* iTravelAppDelegate.h */,
+				07356A291830A13F00D88EC6 /* iTravelAppDelegate.m */,
+				07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */,
+				07356A341830A13F00D88EC6 /* MainStoryboard_iPad.storyboard */,
+				07356A371830A13F00D88EC6 /* iTravelViewController.h */,
+				07356A381830A13F00D88EC6 /* iTravelViewController.m */,
+				07356A201830A13F00D88EC6 /* Supporting Files */,
+			);
+			path = iTravel;
+			sourceTree = "<group>";
+		};
+		07356A201830A13F00D88EC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07356A211830A13F00D88EC6 /* iTravel-Info.plist */,
+				07356A221830A13F00D88EC6 /* InfoPlist.strings */,
+				07356A251830A13F00D88EC6 /* main.m */,
+				07356A271830A13F00D88EC6 /* iTravel-Prefix.pch */,
+				07356A2B1830A13F00D88EC6 /* Default.png */,
+				07356A2D1830A13F00D88EC6 /* Default@2x.png */,
+				07356A2F1830A13F00D88EC6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07356A151830A13E00D88EC6 /* iTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07356A3C1830A13F00D88EC6 /* Build configuration list for PBXNativeTarget "iTravel" */;
+			buildPhases = (
+				07356A121830A13E00D88EC6 /* Sources */,
+				07356A131830A13E00D88EC6 /* Frameworks */,
+				07356A141830A13E00D88EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTravel;
+			productName = iTravel;
+			productReference = 07356A161830A13E00D88EC6 /* iTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07356A0E1830A13E00D88EC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = iTravel;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Thainq;
+			};
+			buildConfigurationList = 07356A111830A13E00D88EC6 /* Build configuration list for PBXProject "iTravel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07356A0D1830A13E00D88EC6;
+			productRefGroup = 07356A171830A13E00D88EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07356A151830A13E00D88EC6 /* iTravel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07356A141830A13E00D88EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07356A241830A13F00D88EC6 /* InfoPlist.strings in Resources */,
+				07356A331830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard in Resources */,
+				07356A361830A13F00D88EC6 /* MainStoryboard_iPad.storyboard in Resources */,
+				07356A421830BBED00D88EC6 /* Default-568h@2x.png in Resources */,
+				07356A431830BBED00D88EC6 /* Default.png in Resources */,
+				07356A441830BBED00D88EC6 /* Default@2x.png in Resources */,
+				07356A471830BD0400D88EC6 /* icon57.png in Resources */,
+				07356A481830BD0400D88EC6 /* icon114.png in Resources */,
+				07356A4A1830BD2500D88EC6 /* icon57.png in Resources */,
+				07356A4C1830BD2E00D88EC6 /* icon114.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07356A121830A13E00D88EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07356A261830A13F00D88EC6 /* main.m in Sources */,
+				07356A2A1830A13F00D88EC6 /* iTravelAppDelegate.m in Sources */,
+				07356A391830A13F00D88EC6 /* iTravelViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07356A221830A13F00D88EC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07356A231830A13F00D88EC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07356A321830A13F00D88EC6 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		07356A341830A13F00D88EC6 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07356A351830A13F00D88EC6 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07356A3A1830A13F00D88EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07356A3B1830A13F00D88EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07356A3D1830A13F00D88EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
+				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07356A3E1830A13F00D88EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
+				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07356A111830A13E00D88EC6 /* Build configuration list for PBXProject "iTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07356A3A1830A13F00D88EC6 /* Debug */,
+				07356A3B1830A13F00D88EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07356A3C1830A13F00D88EC6 /* Build configuration list for PBXNativeTarget "iTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07356A3D1830A13F00D88EC6 /* Debug */,
+				07356A3E1830A13F00D88EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07356A0E1830A13E00D88EC6 /* Project object */;
+}
