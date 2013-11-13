@@ -32,6 +32,18 @@
 		074ABE531831CF1900694174 /* 002_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 074ABE511831CF1900694174 /* 002_2.png */; };
 		074ABE541831CF1900694174 /* 002.png in Resources */ = {isa = PBXBuildFile; fileRef = 074ABE521831CF1900694174 /* 002.png */; };
 		074ABE5A1831D78800694174 /* c-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 074ABE591831D78800694174 /* c-2-1.png */; };
+		07534D141833197200AD9DE0 /* menu-bar@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D121833197200AD9DE0 /* menu-bar@1x.png */; };
+		07534D151833197200AD9DE0 /* menu-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D131833197200AD9DE0 /* menu-bar@2x.png */; };
+		07534D181833280100AD9DE0 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D161833280100AD9DE0 /* menu.png */; };
+		07534D191833280100AD9DE0 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D171833280100AD9DE0 /* menu@2x.png */; };
+		07534D1C183345B800AD9DE0 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1B183345B800AD9DE0 /* back.png */; };
+		07534D1F1833469600AD9DE0 /* back-button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1D1833469600AD9DE0 /* back-button@1x.png */; };
+		07534D201833469600AD9DE0 /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1E1833469600AD9DE0 /* back-button@2x.png */; };
+		07534D221833571800AD9DE0 /* article_like.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D211833571800AD9DE0 /* article_like.png */; };
+		07534D251833723800AD9DE0 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07534D241833723800AD9DE0 /* FavouritesViewController.m */; };
+		07534D281833725200AD9DE0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07534D271833725200AD9DE0 /* SearchViewController.m */; };
+		07534D2B1833726500AD9DE0 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07534D2A1833726500AD9DE0 /* NewsViewController.m */; };
+		07534D2E1833727000AD9DE0 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07534D2D1833727000AD9DE0 /* HistoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +82,23 @@
 		074ABE511831CF1900694174 /* 002_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 002_2.png; sourceTree = "<group>"; };
 		074ABE521831CF1900694174 /* 002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 002.png; sourceTree = "<group>"; };
 		074ABE591831D78800694174 /* c-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c-2-1.png"; sourceTree = "<group>"; };
+		07534D121833197200AD9DE0 /* menu-bar@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bar@1x.png"; sourceTree = "<group>"; };
+		07534D131833197200AD9DE0 /* menu-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-bar@2x.png"; sourceTree = "<group>"; };
+		07534D161833280100AD9DE0 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		07534D171833280100AD9DE0 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		07534D1A18332E2A00AD9DE0 /* UVNMuaThu.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNMuaThu.TTF; sourceTree = "<group>"; };
+		07534D1B183345B800AD9DE0 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		07534D1D1833469600AD9DE0 /* back-button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@1x.png"; sourceTree = "<group>"; };
+		07534D1E1833469600AD9DE0 /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
+		07534D211833571800AD9DE0 /* article_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = article_like.png; sourceTree = "<group>"; };
+		07534D231833723800AD9DE0 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
+		07534D241833723800AD9DE0 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
+		07534D261833725200AD9DE0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		07534D271833725200AD9DE0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		07534D291833726400AD9DE0 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		07534D2A1833726500AD9DE0 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		07534D2C1833727000AD9DE0 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		07534D2D1833727000AD9DE0 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +118,10 @@
 		07356A0D1830A13E00D88EC6 = {
 			isa = PBXGroup;
 			children = (
+				07534D121833197200AD9DE0 /* menu-bar@1x.png */,
+				07534D131833197200AD9DE0 /* menu-bar@2x.png */,
+				07534D161833280100AD9DE0 /* menu.png */,
+				07534D171833280100AD9DE0 /* menu@2x.png */,
 				07356A4B1830BD2E00D88EC6 /* icon114.png */,
 				07356A491830BD2500D88EC6 /* icon57.png */,
 				0704729818321BB7002DCB12 /* tv.png */,
@@ -102,6 +135,10 @@
 				074ABE511831CF1900694174 /* 002_2.png */,
 				074ABE521831CF1900694174 /* 002.png */,
 				074ABE591831D78800694174 /* c-2-1.png */,
+				07534D1B183345B800AD9DE0 /* back.png */,
+				07534D1D1833469600AD9DE0 /* back-button@1x.png */,
+				07534D1E1833469600AD9DE0 /* back-button@2x.png */,
+				07534D211833571800AD9DE0 /* article_like.png */,
 				07356A1F1830A13F00D88EC6 /* iTravel */,
 				07356A181830A13E00D88EC6 /* Frameworks */,
 				07356A171830A13E00D88EC6 /* Products */,
@@ -131,9 +168,9 @@
 			children = (
 				07356A451830BD0400D88EC6 /* icon57.png */,
 				07356A461830BD0400D88EC6 /* icon114.png */,
+				07356A411830BBED00D88EC6 /* Default@2x.png */,
 				07356A3F1830BBED00D88EC6 /* Default-568h@2x.png */,
 				07356A401830BBED00D88EC6 /* Default.png */,
-				07356A411830BBED00D88EC6 /* Default@2x.png */,
 				07356A281830A13F00D88EC6 /* iTravelAppDelegate.h */,
 				07356A291830A13F00D88EC6 /* iTravelAppDelegate.m */,
 				07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */,
@@ -141,6 +178,14 @@
 				07356A371830A13F00D88EC6 /* iTravelViewController.h */,
 				07356A381830A13F00D88EC6 /* iTravelViewController.m */,
 				07356A201830A13F00D88EC6 /* Supporting Files */,
+				07534D261833725200AD9DE0 /* SearchViewController.h */,
+				07534D271833725200AD9DE0 /* SearchViewController.m */,
+				07534D291833726400AD9DE0 /* NewsViewController.h */,
+				07534D2A1833726500AD9DE0 /* NewsViewController.m */,
+				07534D2C1833727000AD9DE0 /* HistoryViewController.h */,
+				07534D2D1833727000AD9DE0 /* HistoryViewController.m */,
+				07534D231833723800AD9DE0 /* FavouritesViewController.h */,
+				07534D241833723800AD9DE0 /* FavouritesViewController.m */,
 			);
 			path = iTravel;
 			sourceTree = "<group>";
@@ -148,6 +193,7 @@
 		07356A201830A13F00D88EC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07534D1A18332E2A00AD9DE0 /* UVNMuaThu.TTF */,
 				07356A211830A13F00D88EC6 /* iTravel-Info.plist */,
 				07356A221830A13F00D88EC6 /* InfoPlist.strings */,
 				07356A251830A13F00D88EC6 /* main.m */,
@@ -230,6 +276,14 @@
 				0704729718320B5E002DCB12 /* bg.png in Resources */,
 				0704729918321BB7002DCB12 /* tv.png in Resources */,
 				0704729B1832246A002DCB12 /* clock.png in Resources */,
+				07534D141833197200AD9DE0 /* menu-bar@1x.png in Resources */,
+				07534D151833197200AD9DE0 /* menu-bar@2x.png in Resources */,
+				07534D181833280100AD9DE0 /* menu.png in Resources */,
+				07534D191833280100AD9DE0 /* menu@2x.png in Resources */,
+				07534D1C183345B800AD9DE0 /* back.png in Resources */,
+				07534D1F1833469600AD9DE0 /* back-button@1x.png in Resources */,
+				07534D201833469600AD9DE0 /* back-button@2x.png in Resources */,
+				07534D221833571800AD9DE0 /* article_like.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +297,10 @@
 				07356A261830A13F00D88EC6 /* main.m in Sources */,
 				07356A2A1830A13F00D88EC6 /* iTravelAppDelegate.m in Sources */,
 				07356A391830A13F00D88EC6 /* iTravelViewController.m in Sources */,
+				07534D251833723800AD9DE0 /* FavouritesViewController.m in Sources */,
+				07534D281833725200AD9DE0 /* SearchViewController.m in Sources */,
+				07534D2B1833726500AD9DE0 /* NewsViewController.m in Sources */,
+				07534D2E1833727000AD9DE0 /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,42 +1,38 @@
 //
-//  iTravelViewController.m
+//  FavouritesViewController.m
 //  iTravel
 //
-//  Created by Thainq on 11/11/2013.
+//  Created by Thainq on 13/11/2013.
 //  Copyright (c) 2013 Thainq. All rights reserved.
 //
 
-#import "iTravelViewController.h"
+#import "FavouritesViewController.h"
 
-@interface iTravelViewController ()
+@interface FavouritesViewController ()
 
 @end
 
-@implementation iTravelViewController
+@implementation FavouritesViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blueColor];
+  //  NSString* boldFontName = @"UVN Mua Thu";
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
-   // NSString* boldFontName = @"UVN Mua Thu";
-  
  //   [self styleNavigationBarWithFontName:boldFontName];
-       // self.title = @"Feed";
     
     
-    UIImageView* menuView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"menu"]];
-    menuView.frame = CGRectMake(0, 0, 20, 20);
-    
-    UIBarButtonItem* menuItem = [[UIBarButtonItem alloc] initWithCustomView:menuView];
-    
-    self.navigationItem.rightBarButtonItem = menuItem;
-      
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void) sendmail{
-
+	// Do any additional setup after loading the view.
 }
 /*
 -(void)styleNavigationBarWithFontName:(NSString*)navigationTitleFont{
@@ -63,8 +59,8 @@
                                            [UIColor whiteColor], UITextAttributeTextColor,
                                            [UIFont fontWithName:navigationTitleFont size:20.0f], UITextAttributeFont,
                                            nil]];
-    //self.title = @"Du Lịch";
-
+    
+    
     
     UIImageView* menuView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"menu"]];
     menuView.frame = CGRectMake(0, 0, 20, 20);
@@ -72,7 +68,8 @@
     UIBarButtonItem* menuItem = [[UIBarButtonItem alloc] initWithCustomView:menuView];
     
     self.navigationItem.rightBarButtonItem = menuItem;
-   
+    
+    
 }
 */
 - (void)didReceiveMemoryWarning
