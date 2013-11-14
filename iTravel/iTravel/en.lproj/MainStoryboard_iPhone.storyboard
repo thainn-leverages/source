@@ -55,9 +55,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="il0-Un-VjU">
-                        <barButtonItem key="rightBarButtonItem" id="2W0-t1-QVM">
+                        <barButtonItem key="leftBarButtonItem" id="2W0-t1-QVM">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VeV-AD-AVL">
-                                <rect key="frame" x="271" y="0.0" width="44" height="44"/>
+                                <rect key="frame" x="5" y="0.0" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="settings.png">
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKy-aE-xQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72" y="-143"/>
+            <point key="canvasLocation" x="40" y="-143"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="2Xk-9L-IUt">
@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf3-ln-7XS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="-170"/>
+            <point key="canvasLocation" x="885" y="-143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oag-Rq-PVn">
@@ -193,7 +193,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXk-ud-6bq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579" y="-170"/>
+            <point key="canvasLocation" x="459" y="-143"/>
         </scene>
     </scenes>
     <resources>

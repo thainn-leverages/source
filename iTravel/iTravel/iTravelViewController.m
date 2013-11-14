@@ -7,7 +7,7 @@
 //
 
 #import "iTravelViewController.h"
-
+//#import "SWRevealViewController.h"
 @interface iTravelViewController ()
 
 @end
@@ -19,6 +19,17 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
+ /*   _sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
+    
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+*/
+
+
     
  //  UIImage *navBackgroundImage = [UIImage imageNamed:@"c-2-1-1.png"];
  //  [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];

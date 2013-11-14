@@ -10,4 +10,6 @@
 
 @interface iTravelViewController : UIViewController
 
+//@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
 @end
