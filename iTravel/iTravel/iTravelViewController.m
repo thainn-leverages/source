@@ -19,25 +19,24 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
-   // NSString* boldFontName = @"UVN Mua Thu";
-  
+    
+ //  UIImage *navBackgroundImage = [UIImage imageNamed:@"c-2-1-1.png"];
+ //  [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+
+    // NSString* boldFontName = @"UVN Mua Thu";  
  //   [self styleNavigationBarWithFontName:boldFontName];
-       // self.title = @"Feed";
-    
-    
-    UIImageView* menuView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"menu"]];
-    menuView.frame = CGRectMake(0, 0, 20, 20);
+/*
+    UIImageView* menuView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"settings.png"]];
+    menuView.frame = CGRectMake(0, 0, 40, 40);
     
     UIBarButtonItem* menuItem = [[UIBarButtonItem alloc] initWithCustomView:menuView];
     
     self.navigationItem.rightBarButtonItem = menuItem;
-      
+ */    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void) sendmail{
 
-}
 /*
 -(void)styleNavigationBarWithFontName:(NSString*)navigationTitleFont{
     

@@ -10,11 +10,8 @@
 //@class LeveyTabBarController;
 
 @interface iTravelAppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>{
-   // LeveyTabBarController *leveyTabBarController;
 
 }
-
-
 @property (strong, nonatomic) UIWindow *window;
 //@property (nonatomic, strong) IBOutlet LeveyTabBarController *leveyTabBarController;
 

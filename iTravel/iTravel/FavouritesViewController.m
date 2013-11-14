@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
+    
   //  NSString* boldFontName = @"UVN Mua Thu";
     
  //   [self styleNavigationBarWithFontName:boldFontName];
@@ -34,6 +35,7 @@
     
 	// Do any additional setup after loading the view.
 }
+
 /*
 -(void)styleNavigationBarWithFontName:(NSString*)navigationTitleFont{
     

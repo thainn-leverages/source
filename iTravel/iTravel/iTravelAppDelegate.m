@@ -10,29 +10,21 @@
 
 
 
+
 @implementation iTravelAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
- 
-  //  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
+     
+  
+     UIImage *navBackgroundImage = [UIImage imageNamed:@"c-2-1-1.png"];
+      [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+  
     
-    
-    UIImage *navBackgroundImage = [UIImage imageNamed:@"c-2-1-1.png"];
-    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
-
-    
-  //  [[UIBarButtonItem appearance] setBackgroundImage:YourUIBarButtonImage
-  //                                          forState:UIControlStateHighlighted
-  //                                        barMetrics:UIBarMetricsDefault];
- 
-    UIImage *backButtonImage = [[UIImage imageNamed:@"article_like.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-        
-    
     UITabBar *tabBar = tabBarController.tabBar;
+    
     UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
     UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
     UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
