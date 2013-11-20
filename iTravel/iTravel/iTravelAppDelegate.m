@@ -49,7 +49,7 @@
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
 
-        [NSThread sleepForTimeInterval:5.0];
+     //   [NSThread sleepForTimeInterval:5.0];
     return YES;
 }
 							
