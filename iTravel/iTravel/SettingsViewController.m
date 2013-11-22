@@ -26,24 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+   // self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"c-2-1-1.png"]];
  //   UINavigationBar *myBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
   //  [self.view addSubview:myBar];
-/*
-    UIImageView* menuView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chosen.png"]];
-    menuView.frame = CGRectMake(0, 0, 33, 25);
-    
-    UIBarButtonItem* menuItem = [[UIBarButtonItem alloc] initWithCustomView:menuView];
-    
-    self.navigationItem.rightBarButtonItem = menuItem;
-    
-    UIImageView* menuViewleft = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"close.png"]];
-    menuView.frame = CGRectMake(0, 0, 40, 40);
-    
-    UIBarButtonItem* menuView1 = [[UIBarButtonItem alloc] initWithCustomView:menuViewleft];
-    
-    self.navigationItem.leftBarButtonItem = menuView1;
-*/
+
     
 	// Do any additional setup after loading the view.
 }
@@ -54,13 +40,35 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 2;
+    return 1;
 }
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return NSLocalizedString(@"LANGUAGE_CHOOSEN",nil);
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 4;
+    return 1;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"settings";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = NSLocalizedString(@"Language",nil);
+    return cell;
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
