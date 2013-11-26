@@ -1175,16 +1175,16 @@
                                             <rect key="frame" x="10" y="1" width="288" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LO6-Kg-rZT">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LO6-Kg-rZT">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="5SQ-sC-kYd"/>
-                                                        <constraint firstAttribute="width" constant="89" id="zfm-dw-uQ6"/>
+                                                        <constraint firstAttribute="width" constant="108" id="03G-wi-d38"/>
+                                                        <constraint firstAttribute="height" constant="21" id="5nY-Fo-kNP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koa-9M-Zda">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="Viet Nam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koa-9M-Zda">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="lCV-vI-1uE"/>
                                                     </constraints>
@@ -1200,8 +1200,7 @@
                                             <constraint firstAttribute="trailing" secondItem="koa-9M-Zda" secondAttribute="trailing" constant="57" id="8Zk-1X-9H0"/>
                                             <constraint firstItem="LO6-Kg-rZT" firstAttribute="top" secondItem="B1X-xp-Q02" secondAttribute="top" constant="14" id="FwS-nh-uaq"/>
                                             <constraint firstItem="LO6-Kg-rZT" firstAttribute="leading" secondItem="B1X-xp-Q02" secondAttribute="leading" constant="30" id="dEC-Ao-PPA"/>
-                                            <constraint firstItem="koa-9M-Zda" firstAttribute="bottom" secondItem="LO6-Kg-rZT" secondAttribute="bottom" type="default" id="qiw-Ur-wwc"/>
-                                            <constraint firstItem="koa-9M-Zda" firstAttribute="top" secondItem="LO6-Kg-rZT" secondAttribute="top" type="default" id="wKE-s5-ydp"/>
+                                            <constraint firstItem="LO6-Kg-rZT" firstAttribute="top" secondItem="koa-9M-Zda" secondAttribute="top" type="default" id="kbY-7l-INQ"/>
                                         </constraints>
                                         <connections>
                                             <segue destination="g3m-YD-A7z" kind="push" identifier="languagechoose" id="9JE-GC-jZR"/>
@@ -1462,24 +1461,6 @@
         <image name="settings.png" width="88" height="88"/>
         <image name="tv.png" width="24" height="24"/>
     </resources>
-    <classes>
-        <class className="LanguageList" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LanguageList.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="iTravelViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iTravelViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

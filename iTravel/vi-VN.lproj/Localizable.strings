@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  iTravel
+
+  Created by Thainq on 26/11/2013.
+  Copyright (c) 2013 Thainq. All rights reserved.
+*/
+"LANGUAGE" = "NGÔN NGỮ";
+"LANGUAGE_CHOOSEN" = "Ngôn ngữ";
+"LANGUAGE_LABEL" = "Viet Nam";

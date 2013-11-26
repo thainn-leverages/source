@@ -35,7 +35,7 @@
     UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
     self.tableView.backgroundColor = mainColor;
     
-      
+    
     SettingCells *langlist = [SettingCells new];
     langlist.name = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
     langlist.detail = NSLocalizedString(@"LANGUAGE_LABEL",@"English");
@@ -66,6 +66,38 @@
     return NSLocalizedString(@"LANGUAGE_CHOOSEN",nil);
 }
 */
+/*
+- (void) ReadDataFromPlist{
+    
+    NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
+    
+    NSString *documentsDirectory = [sysPaths objectAtIndex:0];
+    
+    NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"user.plist"];
+    
+    NSError *error;
+    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath: filePath]) //4
+        
+    {
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"user" ofType:@"plist"]; //5
+        
+        [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
+        
+        
+    }
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"user" ofType:@"plist"];
+    
+    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+     
+}
+ 
+*/
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UIView* headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
@@ -77,7 +109,7 @@
     label.font = [UIFont fontWithName:self.boldFontName size:15.0f];
     label.textColor = self.onColor;
     
-    label.text = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
+    label.text = NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
     
     [headerView addSubview:label];
     

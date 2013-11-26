@@ -1,3 +1,2 @@
 /* Localized versions of Info.plist keys */
-"LANGUAGE_CHOOSEEN" = "Language";
-"LANGUAGE_LABEL" = "Viet Nam"; 
+"CFBundleDisplayName" = "Du Lịch";
