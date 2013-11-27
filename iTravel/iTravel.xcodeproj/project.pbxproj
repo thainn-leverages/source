@@ -122,6 +122,10 @@
 		07A19E0C1845B66F00FDBD55 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A19E0B1845B66F00FDBD55 /* NewsCell.m */; };
 		07A19E0E1845C09900FDBD55 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A19E0D1845C09900FDBD55 /* photo-frame.png */; };
 		07A19E111845EFA700FDBD55 /* NewsiTravelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A19E101845EFA700FDBD55 /* NewsiTravelCell.m */; };
+		07A19E131845FC7500FDBD55 /* ipad-arrow-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A19E121845FC7500FDBD55 /* ipad-arrow-selected.png */; };
+		07A19E171845FC8B00FDBD55 /* ipad-arrow-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A19E141845FC8B00FDBD55 /* ipad-arrow-selected@2x.png */; };
+		07A19E181845FC8B00FDBD55 /* ipad-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A19E151845FC8B00FDBD55 /* ipad-arrow.png */; };
+		07A19E191845FC8B00FDBD55 /* ipad-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A19E161845FC8B00FDBD55 /* ipad-arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -262,6 +266,10 @@
 		07A19E0D1845C09900FDBD55 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
 		07A19E0F1845EFA700FDBD55 /* NewsiTravelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsiTravelCell.h; sourceTree = "<group>"; };
 		07A19E101845EFA700FDBD55 /* NewsiTravelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsiTravelCell.m; sourceTree = "<group>"; };
+		07A19E121845FC7500FDBD55 /* ipad-arrow-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-arrow-selected.png"; sourceTree = "<group>"; };
+		07A19E141845FC8B00FDBD55 /* ipad-arrow-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-arrow-selected@2x.png"; sourceTree = "<group>"; };
+		07A19E151845FC8B00FDBD55 /* ipad-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-arrow.png"; sourceTree = "<group>"; };
+		07A19E161845FC8B00FDBD55 /* ipad-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +399,10 @@
 				073E1FAC1834B6D5009C8ADF /* tick_blue@2x.png */,
 				0745EB991843249300CC4070 /* language.png */,
 				073E1F9A183457EF009C8ADF /* settings.png */,
+				07A19E121845FC7500FDBD55 /* ipad-arrow-selected.png */,
+				07A19E141845FC8B00FDBD55 /* ipad-arrow-selected@2x.png */,
+				07A19E151845FC8B00FDBD55 /* ipad-arrow.png */,
+				07A19E161845FC8B00FDBD55 /* ipad-arrow@2x.png */,
 				07356A1F1830A13F00D88EC6 /* iTravel */,
 				07356A181830A13E00D88EC6 /* Frameworks */,
 				07356A171830A13E00D88EC6 /* Products */,
@@ -638,6 +650,10 @@
 				0708FB7A184580E1006B7296 /* tv_1.png in Resources */,
 				0708FB7C18458248006B7296 /* clock_1.png in Resources */,
 				07A19E0E1845C09900FDBD55 /* photo-frame.png in Resources */,
+				07A19E131845FC7500FDBD55 /* ipad-arrow-selected.png in Resources */,
+				07A19E171845FC8B00FDBD55 /* ipad-arrow-selected@2x.png in Resources */,
+				07A19E181845FC8B00FDBD55 /* ipad-arrow.png in Resources */,
+				07A19E191845FC8B00FDBD55 /* ipad-arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

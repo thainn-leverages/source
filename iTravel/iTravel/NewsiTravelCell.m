@@ -28,10 +28,10 @@
     
     if(selected)
     {
-        UIImage* bg = [UIImage imageNamed:@"photo-frame.png"];
+        UIImage* imgbg = [UIImage imageNamed:@"photo-frame.png"];
         UIImage* disclosureImage = [UIImage imageNamed:@"ipad-arrow-selected.png"];
         
-        [self.imgbackground setImage:bg];
+        [self.imgbackground setImage:imgbg];
         [self.newsImageView setImage:disclosureImage];
         
         [self.newsTitle setTextColor:[UIColor whiteColor]];
