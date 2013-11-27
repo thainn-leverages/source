@@ -13,6 +13,7 @@
 @synthesize newsImageView;
 @synthesize newsTitle;
 @synthesize newsDesc;
+@synthesize imgbackground;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -65,6 +66,7 @@
 - (void)setDetailsWithNews:(NewsCell*)news;
 {
     newsTitle.text = news.name;
+    imgbackground.image = [UIImage imageNamed:@"photo-frame.png"];
     
     if(news.imageData)
     {
