@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3aZ-ld-ymb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3aZ-ld-ymb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -1340,7 +1340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBw-x9-iGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67" y="535"/>
+            <point key="canvasLocation" x="-3" y="533"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fhf-yU-V2k">
@@ -1363,10 +1363,107 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fog-xD-HqM">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="YRx-AL-Pfc" kind="relationship" relationship="rootViewController" id="Vuz-WI-lxT"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkE-nL-B58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-395" y="1966"/>
+        </scene>
+        <!--News View Controller - News-->
+        <scene sceneID="JMa-cu-Fvu">
+            <objects>
+                <tableViewController id="YRx-AL-Pfc" customClass="NewsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="129" sectionHeaderHeight="22" sectionFooterHeight="22" id="8kE-xN-OiI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="129" id="hlL-rg-7qM" customClass="NewsiTravelCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="129"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-sy-LSZ">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="OiL-s2-5C8"/>
+                                                <constraint firstAttribute="height" constant="100" id="YIN-Mq-yTx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHk-Ms-ByW">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="183" id="Jmw-Wg-03w"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-gM-SuI">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="UoK-d8-GwU"/>
+                                                <constraint firstAttribute="width" constant="178" id="d0D-Hc-PSw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-BZ-1Rm">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="66" id="EzS-Kb-Wo8"/>
+                                                <constraint firstAttribute="width" constant="82" id="ptT-PU-QYK"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="SHk-Ms-ByW" firstAttribute="leading" secondItem="7Fq-gM-SuI" secondAttribute="leading" type="default" id="51Y-L7-bRf"/>
+                                    <constraint firstItem="pbr-BZ-1Rm" firstAttribute="top" secondItem="hlL-rg-7qM" secondAttribute="top" constant="25" id="ESt-df-Y7t"/>
+                                    <constraint firstItem="SHk-Ms-ByW" firstAttribute="top" secondItem="hlL-rg-7qM" secondAttribute="top" constant="20" type="default" id="QLH-pV-Frp"/>
+                                    <constraint firstItem="cmu-sy-LSZ" firstAttribute="centerX" secondItem="pbr-BZ-1Rm" secondAttribute="centerX" type="default" id="VVf-YW-jBL"/>
+                                    <constraint firstItem="7Fq-gM-SuI" firstAttribute="bottom" secondItem="cmu-sy-LSZ" secondAttribute="bottom" type="default" id="haT-ug-KEw"/>
+                                    <constraint firstAttribute="trailing" secondItem="SHk-Ms-ByW" secondAttribute="trailing" constant="20" type="default" id="l0Y-50-SiB"/>
+                                    <constraint firstItem="cmu-sy-LSZ" firstAttribute="leading" secondItem="hlL-rg-7qM" secondAttribute="leading" constant="6" id="sQm-ic-ObE"/>
+                                    <constraint firstItem="cmu-sy-LSZ" firstAttribute="centerY" secondItem="hlL-rg-7qM" secondAttribute="centerY" type="default" id="y9v-e3-D4y"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imgbackground" destination="cmu-sy-LSZ" id="z0g-0s-ynr"/>
+                                    <outlet property="newsDesc" destination="7Fq-gM-SuI" id="lx5-mu-9oU"/>
+                                    <outlet property="newsImageView" destination="pbr-BZ-1Rm" id="upL-H5-Z6n"/>
+                                    <outlet property="newsTitle" destination="SHk-Ms-ByW" id="f50-O2-8gf"/>
+                                    <segue destination="kfQ-hl-kg3" kind="push" id="nUl-aH-9Ut"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YRx-AL-Pfc" id="yFt-cL-yQc"/>
+                            <outlet property="delegate" destination="YRx-AL-Pfc" id="vmb-8m-MZJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News" id="Kma-jP-LTF"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lc7-IY-OpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="1962"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="83y-Fd-Zcf">
+            <objects>
+                <viewController id="kfQ-hl-kg3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qYB-S2-9ML">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MeL-8S-L1x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbm-MJ-u0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="1962"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xn1-I9-Jvr">
@@ -1479,26 +1576,6 @@
         <image name="settings.png" width="88" height="88"/>
         <image name="tv.png" width="24" height="24"/>
     </resources>
-    <classes>
-        <class className="LanguageList" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LanguageList.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="iTravelViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iTravelViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

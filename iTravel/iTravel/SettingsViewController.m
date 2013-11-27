@@ -37,8 +37,8 @@
     
     
     SettingCells *langlist = [SettingCells new];
-    langlist.name = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
-    langlist.detail = NSLocalizedString(@"LANGUAGE_LABEL",@"English");
+    langlist.name = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
+    langlist.detail = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_LABEL",@"English");
     
     self.boldFontName = @"Avenir-Black";
      self.onColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:1.0f];
@@ -48,7 +48,7 @@
   //  UINavigationBar *myBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
  //   [self.view addSubview:myBar];
 
-    
+    //NSLog(@"hdsjhsjadjasd");
 	// Do any additional setup after loading the view.
 }
 
@@ -109,7 +109,7 @@
     label.font = [UIFont fontWithName:self.boldFontName size:15.0f];
     label.textColor = self.onColor;
     
-    label.text = NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
+    label.text =@"LANGUAGE"; //NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
     
     [headerView addSubview:label];
     
@@ -141,10 +141,10 @@
    // langImageView.image = [UIImage imageNamed:@"language.png"];
     
     UILabel *langLabel = (UILabel *)[cell viewWithTag:101];
-    langLabel.text = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
+    langLabel.text = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
-    langDetailLabel.text = NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
+    langDetailLabel.text = @"Viet Nam";//NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
 
    
     return cell;

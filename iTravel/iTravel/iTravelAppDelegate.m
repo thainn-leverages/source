@@ -16,7 +16,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-
   
      UIImage *navBackgroundImage = [UIImage imageNamed:@"c-2-1-1.png"];
       [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
@@ -38,9 +37,10 @@
     
      [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"003.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"003_3.png"]];
     
-    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"tv.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tv.png"]];
+    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"tv_1.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tv.png"]];
     
-    [tabBarItem5 setFinishedSelectedImage:[UIImage imageNamed:@"clock.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"clock.png"]];
+    [tabBarItem5 setFinishedSelectedImage:[UIImage imageNamed:@"clock_1.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"clock.png"]];
+    
     
     [tabBar setSelectionIndicatorImage:[[UIImage alloc] init]];
 
@@ -49,6 +49,12 @@
 
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:50.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f], UITextAttributeTextColor,
+                                                           [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],UITextAttributeTextShadowColor,
+                                                           [NSValue valueWithUIOffset:UIOffsetMake(0, 1)],
+                                                           UITextAttributeTextShadowOffset,
+                                                           [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], UITextAttributeFont, nil]];
 
      //   [NSThread sleepForTimeInterval:5.0];
     return YES;
