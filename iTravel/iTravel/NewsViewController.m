@@ -64,7 +64,7 @@
 
 -(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData{
 
-    
+    NSMutableArray *news_tmp = [NSMutableArray array];
     
     NSError *errorResult = nil;
     NSString *jsonResult = [NSString stringWithContentsOfURL:urlResult
@@ -79,9 +79,10 @@
         
          self.keysResult = [jsonDictResult valueForKey:@"News"] ;
          NewsCell *news = [[NewsCell alloc] init];
-        // news.name = [self.keysResult valueForKey:@""]
-        
-
+        news.name = [self.keysResult valueForKey:@"title"];
+        news.imageData = [self.keysResult valueForKey:@"img"];
+        news.desc = [self.keysResult valueForKey:@"description"];
+        [news_tmp addObject:news];
      }
     
     else{
@@ -94,8 +95,9 @@
         [alert show];
         
     }
+  
     [HUD removeFromSuperview];
-    return self.keysResult;
+    return news_tmp;
     
 }
 
