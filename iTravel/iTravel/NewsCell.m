@@ -13,6 +13,7 @@
 @synthesize name;
 @synthesize desc;
 @synthesize imageFile;
+@synthesize imageData;
 
 -(void)loadData
 {

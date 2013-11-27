@@ -25,7 +25,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
-    
+    /*
     if(selected)
     {
         UIImage* imgbg = [UIImage imageNamed:@"photo-frame.png"];
@@ -56,7 +56,7 @@
    
         
     }
-
+*/
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state

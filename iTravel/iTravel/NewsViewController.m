@@ -13,8 +13,10 @@
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #import "NewsViewController.h"
 #import "NewsCell.h"
+#import "NewsiTravelCell.h"
 
 @interface NewsViewController ()
+@property (nonatomic, strong) NSArray* newsList;
 
 @end
 
@@ -56,8 +58,8 @@
     str = [NSString stringWithFormat:@"http://192.168.1.40/tourAPI/Tours/getNews"];
     urlResult =[NSURL URLWithString:str];
     NSData* data = [NSData dataWithContentsOfURL:urlResult];
-    self.keysResult = [self fetchedDatatoResult:data];
-
+ //   self.keysResult = [self fetchedDatatoResult:data];
+       self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
 }
 
 -(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData{
@@ -76,6 +78,8 @@
                                                                          error:&errorResult];
         
          self.keysResult = [jsonDictResult valueForKey:@"News"] ;
+         NewsCell *news = [[NewsCell alloc] init];
+        // news.name = [self.keysResult valueForKey:@""]
         
 
      }
