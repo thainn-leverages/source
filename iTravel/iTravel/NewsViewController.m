@@ -22,6 +22,7 @@
 @end
 
 @implementation NewsViewController
+@synthesize segmentnews;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -140,7 +141,7 @@
 {
 
     // Return the number of rows in the section.
-    return 255;//[self.keysResult count];
+    return [self.keysResult count];
    
 }
 
@@ -155,6 +156,7 @@
  */ 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
+    NSLog(@"%ld", (long)segmentnews.selectedSegmentIndex);
     
 /*
    // NSLog(@"%@", self.keysResult);
@@ -194,6 +196,27 @@
     detail.news = [[self.keysResult valueForKey:@"detail"] objectAtIndex:indexPath.row];
     
     
+}
+
+
+- (IBAction)NewsTypeChanged:(UISegmentedControl*)segmentedControl
+{
+    switch (segmentedControl.selectedSegmentIndex)
+    {
+        case 0:
+            NSLog(@"0");
+            break;
+        case 1:
+            NSLog(@"1");
+            break;
+        case 2:
+             NSLog(@"2");
+            break;
+            
+        default:
+            break;
+    }
+    NSLog(@"List news");
 }
 
 /*
@@ -242,9 +265,7 @@
 - (void)viewWillAppear:(BOOL)animated {
   
   //  [self.tableView reloadData];
-    
-    
-    
+       
     
 }
 @end

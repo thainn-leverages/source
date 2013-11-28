@@ -1464,6 +1464,9 @@
                                 <segment title="" image="Tag-48.png"/>
                             </segments>
                             <color key="tintColor" red="0.39215689897537231" green="0.65882354974746704" blue="0.89411771297454834" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="NewsTypeChanged:" destination="YRx-AL-Pfc" eventType="valueChanged" id="91c-mg-5yu"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

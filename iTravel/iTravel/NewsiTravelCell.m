@@ -36,11 +36,14 @@
         [self.disclosureImage setImage:disclosureImage];
         
         [self.newsTitle setTextColor:[UIColor whiteColor]];
-        [self.newsTitle setShadowColor:[UIColor colorWithRed:50.0/255 green:68.0/255 blue:200.0/255 alpha:1.0]];
+        [self.newsTitle setShadowColor:[UIColor colorWithRed:0.0/255 green:68.0/255 blue:125.0/255 alpha:1.0]];
+        //[self.newsTitle setShadowColor:[UIColor whiteColor]];
         [self.newsTitle setShadowOffset:CGSizeMake(0, 1)];
         
         [self.newsDesc setTextColor:[UIColor whiteColor]];
-        [self.newsDesc setShadowColor:[UIColor colorWithRed:50.0/255 green:68.0/255 blue:200.0/255 alpha:1.0]];
+        
+        [self.newsDesc setShadowColor:[UIColor colorWithRed:0.0/255 green:68.0/255 blue:118.0/255 alpha:1.0]];
+       // [self.newsDesc setShadowColor:[UIColor whiteColor]];
         [self.newsDesc setShadowOffset:CGSizeMake(0, 1)];
         
        
