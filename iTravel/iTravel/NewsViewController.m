@@ -14,6 +14,7 @@
 #import "NewsViewController.h"
 #import "NewsCell.h"
 #import "NewsiTravelCell.h"
+#import "DetailNewsiTravelViewController.h"
 
 @interface NewsViewController ()
 @property (nonatomic, strong) NSArray* newsList;
@@ -48,18 +49,18 @@
     
   
     [self showLoading];
-    [self loadData];
+   // [self loadData];
   //  NSLog(@"%d", count);
 }
 
 - (void) loadData
 {
      
-    str = [NSString stringWithFormat:@"http://192.168.1.40/tourAPI/Tours/getNews"];
+    str = [NSString stringWithFormat:@"http://192.168.1.224/tourAPI/Tours/getNews"];
     urlResult =[NSURL URLWithString:str];
     NSData* data = [NSData dataWithContentsOfURL:urlResult];
- //   self.keysResult = [self fetchedDatatoResult:data];
-       self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
+    self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
+ 
 }
 
 -(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData{
@@ -78,11 +79,17 @@
                                                                          error:&errorResult];
         
          self.keysResult = [jsonDictResult valueForKey:@"News"] ;
-         NewsCell *news = [[NewsCell alloc] init];
-        news.name = [self.keysResult valueForKey:@"title"];
-        news.imageData = [self.keysResult valueForKey:@"img"];
-        news.desc = [self.keysResult valueForKey:@"description"];
-        [news_tmp addObject:news];
+        
+        for(int i=0;i<[self.keysResult count];i++){
+        
+            NewsCell *news = [[NewsCell alloc] init];
+            news.name = [[self.keysResult valueForKey:@"title"] objectAtIndex:i];
+            news.imageFile = [[self.keysResult valueForKey:@"img"] objectAtIndex:i];
+            news.desc = [[self.keysResult valueForKey:@"description"] objectAtIndex:i];
+            [news_tmp addObject:news];
+        }
+         
+       [self.tableView reloadData];
      }
     
     else{
@@ -96,7 +103,7 @@
         
     }
   
-    [HUD removeFromSuperview];
+   // [HUD removeFromSuperview];
     return news_tmp;
     
 }
@@ -110,7 +117,7 @@
     HUD.labelText = @"Loading...";
     [HUD show:YES];
     
-    //[HUD showWhileExecuting:@selector(loadData) onTarget:self withObject:nil animated:YES];
+    [HUD showWhileExecuting:@selector(loadData) onTarget:self withObject:nil animated:YES];
     
 }
 
@@ -133,21 +140,23 @@
 {
 
     // Return the number of rows in the section.
-    return [self.keysResult count];
+    return 255;//[self.keysResult count];
    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+ /*
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[NewsiTravelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text=@"Test";
-   
-  
+ */ 
+      NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
+      [cell setDetailsWithNews:newss];
+    
+/*
    // NSLog(@"%@", self.keysResult);
       UIImageView *langImageView = (UIImageView *)[cell viewWithTag:100];
     
@@ -159,8 +168,32 @@
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
     langDetailLabel.text =[[self.keysResult objectAtIndex:indexPath.row] valueForKey:@"description"];
-    
+*/    
     return cell;
+}
+/*
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    [self performSegueWithIdentifier:@"detailnews" sender:self];
+    
+    
+  //   <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+   //  [self.navigationController pushViewController:detailViewController animated:YES];
+    
+}
+*/
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    DetailNewsiTravelViewController *detail = segue.destinationViewController;
+    
+    NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+
+    detail.news = [[self.keysResult valueForKey:@"detail"] objectAtIndex:indexPath.row];
+    
+    
 }
 
 /*
@@ -204,22 +237,14 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
-/*
+
+
 - (void)viewWillAppear:(BOOL)animated {
   
   //  [self.tableView reloadData];
     
     
+    
+    
 }
-*/
 @end

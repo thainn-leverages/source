@@ -20,4 +20,8 @@
             
 }
 @property (strong, nonatomic)  NSMutableArray *keysResult;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentnews;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableview;
+
 @end
