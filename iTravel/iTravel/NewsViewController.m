@@ -79,10 +79,10 @@
         
          self.keysResult = [jsonDictResult valueForKey:@"News"] ;
          NewsCell *news = [[NewsCell alloc] init];
-        news.name = [self.keysResult valueForKey:@"title"];
-        news.imageData = [self.keysResult valueForKey:@"img"];
-        news.desc = [self.keysResult valueForKey:@"description"];
-        [news_tmp addObject:news];
+         news.name = [self.keysResult valueForKey:@"title"];
+         news.imageData = [self.keysResult valueForKey:@"img"];
+         news.desc = [self.keysResult valueForKey:@"description"];
+        // [news_tmp addObject:news];
      }
     
     else{
@@ -97,7 +97,7 @@
     }
   
     [HUD removeFromSuperview];
-    return news_tmp;
+    return news;
     
 }
 
@@ -140,10 +140,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[NewsiTravelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text=@"Test";
    
