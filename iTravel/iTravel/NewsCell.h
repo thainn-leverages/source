@@ -10,8 +10,8 @@
 
 @interface NewsCell : NSObject
 
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *desc; 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *desc; 
 @property (nonatomic, strong) NSString *imageFile;
 @property (nonatomic, retain) NSData* imageData;
 

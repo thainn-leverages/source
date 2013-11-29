@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *newsTitle;
 @property (weak, nonatomic) IBOutlet UILabel *newsDesc;
 @property (weak, nonatomic) IBOutlet UIImageView *imgbackground;
+@property (weak, nonatomic) IBOutlet UIImageView *disclosureImage;
 
 - (void)setDetailsWithNews:(NewsCell*)news;
 

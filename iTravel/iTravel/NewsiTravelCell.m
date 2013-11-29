@@ -26,38 +26,50 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
-    /*
+   
     if(selected)
     {
-        UIImage* imgbg = [UIImage imageNamed:@"photo-frame.png"];
+        //UIImage* imgbg = [UIImage imageNamed:@"photo-frame.png"];
         UIImage* disclosureImage = [UIImage imageNamed:@"ipad-arrow-selected.png"];
         
-        [self.imgbackground setImage:imgbg];
-        [self.newsImageView setImage:disclosureImage];
+        //[self.imgbackground setImage:imgbg];
+        [self.disclosureImage setImage:disclosureImage];
         
         [self.newsTitle setTextColor:[UIColor whiteColor]];
-        [self.newsTitle setShadowColor:[UIColor colorWithRed:25.0/255 green:96.0/255 blue:148.0/255 alpha:1.0]];
-        [self.newsTitle setShadowOffset:CGSizeMake(0, -1)];
+        [self.newsTitle setShadowColor:[UIColor colorWithRed:0.0/255 green:68.0/255 blue:125.0/255 alpha:1.0]];
+        //[self.newsTitle setShadowColor:[UIColor whiteColor]];
+        [self.newsTitle setShadowOffset:CGSizeMake(0, 1)];
+        
+        [self.newsDesc setTextColor:[UIColor whiteColor]];
+        
+        [self.newsDesc setShadowColor:[UIColor colorWithRed:0.0/255 green:68.0/255 blue:118.0/255 alpha:1.0]];
+       // [self.newsDesc setShadowColor:[UIColor whiteColor]];
+        [self.newsDesc setShadowOffset:CGSizeMake(0, 1)];
         
        
         
     }
+  
     else
     {
-        UIImage* bg = [UIImage imageNamed:@"ipad-list-element.png"];
+       // UIImage* bg = [UIImage imageNamed:@"ipad-list-element.png"];
         UIImage* disclosureImage = [UIImage imageNamed:@"ipad-arrow.png"];
         
-        [self.imgbackground setImage:bg];
-        [self.newsImageView setImage:disclosureImage];
+      //  [self.imgbackground setImage:bg];
+        [self.disclosureImage setImage:disclosureImage];
         
-        [self.newsTitle setTextColor:[UIColor colorWithRed:0.0 green:68.0/255 blue:118.0/255 alpha:1.0]];
+        [self.newsTitle setTextColor:[UIColor colorWithRed:0.0 green:68.0/255 blue:125.0/255 alpha:1.0]];
         [self.newsTitle setShadowColor:[UIColor whiteColor]];
         [self.newsTitle setShadowOffset:CGSizeMake(0, 1)];
+        
+        [self.newsDesc setTextColor:[UIColor colorWithRed:0.0 green:68.0/255 blue:118.0/255 alpha:1.0]];
+        [self.newsDesc setShadowColor:[UIColor whiteColor]];
+        [self.newsDesc setShadowOffset:CGSizeMake(0, 1)];
         
    
         
     }
-*/
+
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
@@ -66,6 +78,11 @@
 - (void)setDetailsWithNews:(NewsCell*)news;
 {
     newsTitle.text = news.name;
+    newsTitle.numberOfLines = 0;
+   // [newsTitle sizeToFit];
+    newsDesc.text  = news.desc;
+  //    [newsDesc sizeToFit];
+    newsDesc.numberOfLines = 0;
     imgbackground.image = [UIImage imageNamed:@"photo-frame.png"];
     
     if(news.imageData)
