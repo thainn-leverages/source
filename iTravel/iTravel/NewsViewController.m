@@ -174,8 +174,10 @@
  */ 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
-    NSLog(@"%ld", (long)segmentnews.selectedSegmentIndex);
-    
+ /*   if(segmentnews.selectedSegmentIndex==0){
+        NSLog(@"0");
+    }
+*/
 /*
    // NSLog(@"%@", self.keysResult);
       UIImageView *langImageView = (UIImageView *)[cell viewWithTag:100];
@@ -222,19 +224,19 @@
     switch (segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            NSLog(@"0");
+        //    NSLog(@"0");
             break;
         case 1:
-            NSLog(@"1");
+        //    NSLog(@"1");
             break;
         case 2:
-             NSLog(@"2");
+        //     NSLog(@"2");
             break;
             
         default:
             break;
     }
-    NSLog(@"List news");
+ //   NSLog(@"List news");
 }
 
 /*
