@@ -43,6 +43,10 @@
     
     
     [tabBar setSelectionIndicatorImage:[[UIImage alloc] init]];
+    
+   //Hack for IOS 7
+   // [[tabBarController tabBar] setSelectionIndicatorImage:[UIImage imageNamed:@"tab_bar_selection_indicator.png"]];
+ 
 
     [[UITabBar appearance] setBackgroundColor:[UIColor clearColor]];
     UIImage* tabBarBackground = [UIImage imageNamed:@"c-2-1-1.png"];

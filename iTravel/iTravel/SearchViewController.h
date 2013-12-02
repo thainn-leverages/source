@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDelegate, UIActionSheetDelegate>{
+@interface SearchViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UIActionSheetDelegate>{
 
     IBOutlet UIActionSheet *obj_actionSheet_placefrom;
     IBOutlet UIActionSheet *obj_actionSheet_placeto;
@@ -18,7 +18,9 @@
     UIPickerView *pFrom;
     UIPickerView *pTo;
     UIPickerView *pPrice;
-
+    NSMutableArray *regionDataFrom;
+    NSString *pFromlbl;
+    int flag;
                      
    
 }
