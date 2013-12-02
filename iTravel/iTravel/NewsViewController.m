@@ -80,13 +80,6 @@
                                                                          error:&errorResult];
         
          self.keysResult = [jsonDictResult valueForKey:@"News"] ;
-<<<<<<< HEAD
-         NewsCell *news = [[NewsCell alloc] init];
-         news.name = [self.keysResult valueForKey:@"title"];
-         news.imageData = [self.keysResult valueForKey:@"img"];
-         news.desc = [self.keysResult valueForKey:@"description"];
-        // [news_tmp addObject:news];
-=======
         
         for(int i=0;i<[self.keysResult count];i++){
         
@@ -98,7 +91,7 @@
         }
          
        [self.tableView reloadData];
->>>>>>> ab3069c1245f01b829cbc7632dd7ca67df5044a6
+
      }
     
     else{
@@ -112,13 +105,10 @@
         
     }
   
-<<<<<<< HEAD
-    [HUD removeFromSuperview];
-    return news;
-=======
+
    // [HUD removeFromSuperview];
     return news_tmp;
->>>>>>> ab3069c1245f01b829cbc7632dd7ca67df5044a6
+
     
 }
 
@@ -161,10 +151,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
-<<<<<<< HEAD
-    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-=======
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
  /*
 >>>>>>> ab3069c1245f01b829cbc7632dd7ca67df5044a6
