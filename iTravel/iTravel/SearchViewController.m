@@ -103,6 +103,7 @@
         pFrom.dataSource = self;
         [actionSheet addSubview:pFrom];
         [pFrom setTag:105];
+        [pFrom selectRow:flag inComponent:0 animated:NO];
     }
 
 }
@@ -119,7 +120,7 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-   if(0)
+
     return [regionDataFrom count];
 }
 
