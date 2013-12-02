@@ -152,16 +152,10 @@
 {
     static NSString *CellIdentifier = @"NewsCell";
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
- /*
->>>>>>> ab3069c1245f01b829cbc7632dd7ca67df5044a6
-    if (cell == nil) {
-        cell = [[NewsiTravelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
- */ 
+
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
-    NSLog(@"%ld", (long)segmentnews.selectedSegmentIndex);
-    
+
 /*
    // NSLog(@"%@", self.keysResult);
       UIImageView *langImageView = (UIImageView *)[cell viewWithTag:100];
@@ -208,19 +202,19 @@
     switch (segmentedControl.selectedSegmentIndex)
     {
         case 0:
-            NSLog(@"0");
+        //    NSLog(@"0");
             break;
         case 1:
-            NSLog(@"1");
+        //    NSLog(@"1");
             break;
         case 2:
-             NSLog(@"2");
+        //     NSLog(@"2");
             break;
             
         default:
             break;
     }
-    NSLog(@"List news");
+ //   NSLog(@"List news");
 }
 
 /*

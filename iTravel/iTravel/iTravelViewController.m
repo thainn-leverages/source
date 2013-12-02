@@ -7,6 +7,7 @@
 //
 
 #import "iTravelViewController.h"
+#import "Reachability.h"
 @interface iTravelViewController ()
 
 @end
@@ -17,6 +18,18 @@
 {
     [super viewDidLoad];
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    
+    if (networkStatus == NotReachable) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thông báo lỗi!"
+                                                        message:@"Ứng dụng cần có kết nối mạng để truy cập"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Tắt thông báo"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
     
    
