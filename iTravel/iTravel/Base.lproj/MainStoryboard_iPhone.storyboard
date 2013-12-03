@@ -1876,6 +1876,62 @@
         <image name="settings.png" width="88" height="88"/>
         <image name="tv.png" width="24" height="24"/>
     </resources>
+    <classes>
+        <class className="DetailNewsiTravelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailNewsiTravelViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="back" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="detailweb" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="LanguageList" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LanguageList.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="segmentnews" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="tableview" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NewsiTravelCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsiTravelCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="disclosureImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imgbackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="newsDesc" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="newsImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="newsTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="CallshowPicker:"/>
+                <relationship kind="outlet" name="DateSearch" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="PlaceFrom" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="Price" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="obj_actionSheet_date" candidateClass="UIActionSheet"/>
+                <relationship kind="outlet" name="obj_actionSheet_placefrom" candidateClass="UIActionSheet"/>
+                <relationship kind="outlet" name="obj_actionSheet_placeto" candidateClass="UIActionSheet"/>
+                <relationship kind="outlet" name="obj_actionSheet_price" candidateClass="UIActionSheet"/>
+                <relationship kind="outlet" name="search" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="iTravelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iTravelViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
