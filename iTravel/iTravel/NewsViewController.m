@@ -81,8 +81,10 @@
         
 
 
+
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
           NSLog(@"%@",   self.keysResult);
+
 
 
          NewsCell *news = [[NewsCell alloc] init];
@@ -164,7 +166,9 @@
     static NSString *CellIdentifier = @"NewsCell";
 
 
+
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
