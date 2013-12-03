@@ -1526,9 +1526,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="CallshowPicker:" destination="YQg-lU-47W" eventType="touchUpInside" id="NnB-fl-MMw"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZy-u2-Zfj">
                                 <rect key="frame" x="0.0" y="480" width="0.0" height="0.0"/>
@@ -1540,9 +1537,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="CallshowPicker:" destination="YQg-lU-47W" eventType="touchUpInside" id="n1p-us-OHM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ri-5x-NPe">
                                 <rect key="frame" x="0.0" y="480" width="0.0" height="0.0"/>
@@ -1554,9 +1548,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="CallShowDatePicker:" destination="YQg-lU-47W" eventType="touchUpInside" id="0ap-sX-8H3"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJT-cP-Sba">
                                 <rect key="frame" x="110" y="110" width="198" height="1"/>
@@ -1580,7 +1571,6 @@
                     <connections>
                         <outlet property="DateSearch" destination="2ri-5x-NPe" id="DwF-qt-Nuc"/>
                         <outlet property="PlaceFrom" destination="WDv-jg-jMx" id="YCA-Wc-d6C"/>
-                        <outlet property="PlaceTo" destination="6mO-JF-UQU" id="Zuh-S5-jZj"/>
                         <outlet property="Price" destination="uZy-u2-Zfj" id="E6c-V9-vfk"/>
                         <outlet property="search" destination="9KK-R8-Top" id="51N-k0-pPp"/>
                     </connections>
