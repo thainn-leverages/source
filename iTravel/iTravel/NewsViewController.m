@@ -46,21 +46,18 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-  
+
     [self showLoading];
-   // [self loadData];
-  //  NSLog(@"%d", count);
+
 }
 
 - (void) loadData
-{
-     
+{     
     str = [NSString stringWithFormat:@"http://192.168.1.224/tourAPI/Tours/getNews"];
     urlResult =[NSURL URLWithString:str];
     NSData* data = [NSData dataWithContentsOfURL:urlResult];
     self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
+  
  
 }
 
@@ -79,13 +76,14 @@
                                                                        options:kNilOptions
                                                                          error:&errorResult];
         
-         self.keysResult = [jsonDictResult valueForKey:@"News"] ;
+         self.keysResult = [jsonDictResult valueForKey:@"data"] ;
+          NSLog(@"%@",   self.keysResult);
 
          NewsCell *news = [[NewsCell alloc] init];
          news.name = [self.keysResult valueForKey:@"title"];
          news.imageData = [self.keysResult valueForKey:@"img"];
          news.desc = [self.keysResult valueForKey:@"description"];
-        // [news_tmp addObject:news];
+
 
         
         for(int i=0;i<[self.keysResult count];i++){
@@ -97,7 +95,7 @@
             [news_tmp addObject:news];
         }
          
-       [self.tableView reloadData];
+      [self.tableView reloadData];
 
      }
     
@@ -138,18 +136,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return [self.keysResult count];
    
@@ -158,10 +153,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
-
-      
-
-    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
@@ -202,8 +194,7 @@
     NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
 
     detail.news = [[self.keysResult valueForKey:@"detail"] objectAtIndex:indexPath.row];
-    
-    
+
 }
 
 
@@ -212,19 +203,19 @@
     switch (segmentedControl.selectedSegmentIndex)
     {
         case 0:
-        //    NSLog(@"0");
+
             break;
         case 1:
-        //    NSLog(@"1");
+
             break;
         case 2:
-        //     NSLog(@"2");
+
             break;
             
         default:
             break;
     }
- //   NSLog(@"List news");
+
 }
 
 /*
@@ -266,14 +257,9 @@
 }
 */
 
-#pragma mark - Table view delegate
-
-
-
 - (void)viewWillAppear:(BOOL)animated {
   
   //  [self.tableView reloadData];
-       
-    
+
 }
 @end
