@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     //NSLog(@"%@", news);
+    self.navigationItem.title =@"Tin Chi Tiết";
     
     [detailweb loadHTMLString:news baseURL:nil];
    

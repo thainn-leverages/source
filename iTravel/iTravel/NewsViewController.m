@@ -16,8 +16,10 @@
 #import "NewsiTravelCell.h"
 #import "DetailNewsiTravelViewController.h"
 
+
 @interface NewsViewController ()
 @property (nonatomic, strong) NSArray* newsList;
+@property (nonatomic, strong) NSMutableArray *news_tmp;
 
 @end
 
@@ -56,6 +58,10 @@
     str = [NSString stringWithFormat:@"http://192.168.1.224/tourAPI/Tours/getNews"];
     urlResult =[NSURL URLWithString:str];
     NSData* data = [NSData dataWithContentsOfURL:urlResult];
+    
+   // [self performSelectorOnMainThread:@selector(fetchedDatatoResult:) withObject:data waitUntilDone:YES];
+
+    //self.newsList = self.news_tmp;//
     self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
   
  
@@ -63,7 +69,7 @@
 
 -(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData{
 
-    NSMutableArray *news_tmp = [NSMutableArray array];
+    /*NSMutableArray **/ self.news_tmp = [NSMutableArray array];
     
     NSError *errorResult = nil;
     NSString *jsonResult = [NSString stringWithContentsOfURL:urlResult
@@ -77,13 +83,13 @@
                                                                          error:&errorResult];
         
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
-          NSLog(@"%@",   self.keysResult);
-
+       //  NSLog(@"%@",   self.keysResult);
+/*
          NewsCell *news = [[NewsCell alloc] init];
          news.name = [self.keysResult valueForKey:@"title"];
          news.imageData = [self.keysResult valueForKey:@"img"];
          news.desc = [self.keysResult valueForKey:@"description"];
-
+*/
 
         
         for(int i=0;i<[self.keysResult count];i++){
@@ -91,8 +97,9 @@
             NewsCell *news = [[NewsCell alloc] init];
             news.name = [[self.keysResult valueForKey:@"title"] objectAtIndex:i];
             news.imageFile = [[self.keysResult valueForKey:@"img"] objectAtIndex:i];
+            news.imageData = [[self.keysResult valueForKey:@"img"] objectAtIndex:i];
             news.desc = [[self.keysResult valueForKey:@"description"] objectAtIndex:i];
-            [news_tmp addObject:news];
+            [self.news_tmp addObject:news];
         }
          
       [self.tableView reloadData];
@@ -112,7 +119,7 @@
   
 
    // [HUD removeFromSuperview];
-    return news_tmp;
+    return self.news_tmp;
 
     
 }
@@ -121,7 +128,7 @@
   
     HUD = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:HUD];
-    HUD.mode = MBProgressHUDModeAnnularDeterminate;
+    HUD.mode = MBProgressHUDModeDeterminate;
     HUD.delegate = self;
     HUD.labelText = @"Loading...";
     [HUD show:YES];
@@ -156,9 +163,13 @@
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
+    
       [cell setDetailsWithNews:newss];
-
+/*   [cell.imageView setImageWithURL:[NSURL URLWithString: newss.imageFile]  placeholderImage:[UIImage imageNamed:@"Hisoka.jpg"]];
+    NSLog(@"%@",newss.imageFile  );
+ */
 /*
+
    // NSLog(@"%@", self.keysResult);
       UIImageView *langImageView = (UIImageView *)[cell viewWithTag:100];
     
