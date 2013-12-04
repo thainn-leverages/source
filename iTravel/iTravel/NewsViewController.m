@@ -79,6 +79,7 @@
                                                                        options:kNilOptions
                                                                          error:&errorResult];
         
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -87,6 +88,9 @@
 >>>>>>> 69f507b34d27908047ecbc2ff28a859427fe5ec8
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
           NSLog(@"%@",   self.keysResult);
+=======
+         self.keysResult = [jsonDictResult valueForKey:@"News"] ;
+>>>>>>> parent of 2cba004... 17:23
 
 
 
@@ -95,9 +99,12 @@
          news.imageData = [self.keysResult valueForKey:@"img"];
          news.desc = [self.keysResult valueForKey:@"description"];
         // [news_tmp addObject:news];
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
+=======
+>>>>>>> parent of 2cba004... 17:23
 
 
 =======
@@ -175,6 +182,7 @@
     static NSString *CellIdentifier = @"NewsCell";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 =======
 
@@ -182,6 +190,11 @@
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
 >>>>>>> 69f507b34d27908047ecbc2ff28a859427fe5ec8
+=======
+      
+
+    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+>>>>>>> parent of 2cba004... 17:23
 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
