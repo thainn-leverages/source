@@ -76,7 +76,7 @@
                                                                        options:kNilOptions
                                                                          error:&errorResult];
         
-<<<<<<< HEAD
+
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
           NSLog(@"%@",   self.keysResult);
 
@@ -86,9 +86,8 @@
          news.desc = [self.keysResult valueForKey:@"description"];
 
 
-=======
-         self.keysResult = [jsonDictResult valueForKey:@"News"] ;
->>>>>>> 5276425fe132fb0e16c45369224b235c48437fba
+
+
         
         for(int i=0;i<[self.keysResult count];i++){
         
@@ -157,11 +156,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
-<<<<<<< HEAD
+
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-=======
-    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
->>>>>>> 5276425fe132fb0e16c45369224b235c48437fba
 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
       [cell setDetailsWithNews:newss];
