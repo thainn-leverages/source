@@ -108,7 +108,7 @@
     
     cell.textLabel.text = [langlist objectAtIndex:indexPath.row];
     if([self getCheckedForIndex:indexPath.row]==YES){
-        NSLog(@"1");
+    //    NSLog(@"1");
               cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
 
@@ -217,7 +217,7 @@
     
     languageSet = [propertyDict objectForKey:@"Language"];
     
-    NSLog(@"%@", languageSet);
+    //NSLog(@"%@", languageSet);
    
     
 

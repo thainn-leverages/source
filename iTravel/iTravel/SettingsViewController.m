@@ -16,7 +16,10 @@
 
 @end
 
-@implementation SettingsViewController
+@implementation SettingsViewController{
+
+    NSArray *list;
+}
 
 
 
@@ -35,7 +38,7 @@
   //  UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
   //  self.tableView.backgroundColor = mainColor;
     
-    
+    list = [NSArray arrayWithObjects:@"Việt Nam", @"English", nil];
     SettingCells *langlist = [SettingCells new];
     langlist.name = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
     langlist.detail = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_LABEL",@"English");
@@ -48,7 +51,7 @@
   //  UINavigationBar *myBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
  //   [self.view addSubview:myBar];
 
-    //NSLog(@"hdsjhsjadjasd");
+   
 	// Do any additional setup after loading the view.
 }
 
@@ -139,15 +142,21 @@
     }
     
   //  cell.textLabel.text = NSLocalizedString(@"Language",nil);
-    
-  //  UIImageView *langImageView = (UIImageView *)[cell viewWithTag:100];
-   // langImageView.image = [UIImage imageNamed:@"language.png"];
+
     
     UILabel *langLabel = (UILabel *)[cell viewWithTag:101];
     langLabel.text = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
-    langDetailLabel.text = @"Viet Nam";//NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
+   
+    NSLog(@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]);
+    if([[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]==0){
+        langDetailLabel.text = @"Viet Nam";
+    }
+    else{
+        langDetailLabel.text = @"English";
+    }
+    //NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
 
    
     return cell;
