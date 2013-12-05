@@ -10,7 +10,12 @@
     Becarefull, program can crah when using with MBProgressHUD
 */
 
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0)
+
+#define urlnews [NSURL URLWithString:@"http://192.168.1.224/tourAPI/Tours/getNews"]
+#define urlEvent [NSURL URLWithString:@"http://192.168.1.224/tourAPI/Tours/getEvens"]
+#define urlpromote [NSURL URLWithString:@"http://192.168.1.224/tourAPI/Tours/getSelfs"]
+
 #import "NewsViewController.h"
 #import "NewsCell.h"
 #import "NewsiTravelCell.h"
@@ -49,30 +54,30 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-    [self showLoading];
+    [self showLoading:urlnews];
 
 }
 
-- (void) loadData
-{     
-    str = [NSString stringWithFormat:@"http://192.168.1.224/tourAPI/Tours/getNews"];
-    urlResult =[NSURL URLWithString:str];
-    NSData* data = [NSData dataWithContentsOfURL:urlResult];
+- (void) loadData: (NSURL*) url
+{
+   // NSLog(@"%@", url);
+  //  str = [NSString stringWithFormat:url];
+   // urlResult =[NSURL URLWithString:str];
+    NSData* data = [NSData dataWithContentsOfURL:url];
     
    // [self performSelectorOnMainThread:@selector(fetchedDatatoResult:) withObject:data waitUntilDone:YES];
-
-    //self.newsList = self.news_tmp;//
-    self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
-  
+    self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data withUrl:url]];
+   
+   // NSLog(@"%@", self.newsList);
  
 }
 
--(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData{
+-(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData withUrl:(NSURL*) url{
 
     /*NSMutableArray **/ self.news_tmp = [NSMutableArray array];
     
     NSError *errorResult = nil;
-    NSString *jsonResult = [NSString stringWithContentsOfURL:urlResult
+    NSString *jsonResult = [NSString stringWithContentsOfURL:url
                                                     encoding:NSUTF8StringEncoding
                                                        error:&errorResult];
     
@@ -83,7 +88,7 @@
                                                                          error:&errorResult];
         
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
-       //  NSLog(@"%@",   self.keysResult);
+        NSLog(@"%@",   self.keysResult);
 /*
          NewsCell *news = [[NewsCell alloc] init];
          news.name = [self.keysResult valueForKey:@"title"];
@@ -113,7 +118,7 @@
                                                        delegate:nil
                                               cancelButtonTitle:@"Tắt thông báo"
                                               otherButtonTitles:nil];
-        [alert show];
+       [alert show];
         
     }
   
@@ -124,7 +129,7 @@
     
 }
 
-- (void) showLoading{
+- (void) showLoading:(NSURL *)url{
   
     HUD = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:HUD];
@@ -132,9 +137,7 @@
     HUD.delegate = self;
     HUD.labelText = @"Loading...";
     [HUD show:YES];
-    
-    [HUD showWhileExecuting:@selector(loadData) onTarget:self withObject:nil animated:YES];
-    
+    [HUD showWhileExecuting:@selector(loadData:) onTarget:self withObject:url animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -165,9 +168,7 @@
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
     
       [cell setDetailsWithNews:newss];
-/*   [cell.imageView setImageWithURL:[NSURL URLWithString: newss.imageFile]  placeholderImage:[UIImage imageNamed:@"Hisoka.jpg"]];
-    NSLog(@"%@",newss.imageFile  );
- */
+
 /*
 
    // NSLog(@"%@", self.keysResult);
@@ -214,13 +215,13 @@
     switch (segmentedControl.selectedSegmentIndex)
     {
         case 0:
-
+                [self showLoading:urlnews];
             break;
         case 1:
-
+                [self showLoading:urlEvent];
             break;
         case 2:
-
+                [self showLoading:urlpromote];
             break;
             
         default:

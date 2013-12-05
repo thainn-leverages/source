@@ -87,12 +87,7 @@
   //    [newsDesc sizeToFit];
     newsDesc.numberOfLines = 0;
     imgbackground.image = [UIImage imageNamed:@"photo-frame.png"];
-  
-    
-  //  NSURL *url = [NSURL URLWithString:news.imageFile];
-  //  NSData *data = [NSData dataWithContentsOfURL:url];
-   //  UIImage *image = [[UIImage alloc] initWithData:data];
-   // newsImageView.image = image;
+
     
   
     [newsImageView setImageWithURL:[NSURL URLWithString:news.imageFile]
