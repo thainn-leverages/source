@@ -14,10 +14,11 @@
 
 @implementation LanguageList {
 
-     NSArray *langlist;
+    NSArray *langlist;
     NSIndexPath* checkedIndexPath;
 
 }
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -63,7 +64,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
@@ -75,6 +75,31 @@
     return [langlist count];
 }
 
+- (NSString *)getKeyForIndex:(int)index
+{
+    return [NSString stringWithFormat:@"KEY%d",index];
+}
+
+- (BOOL) getCheckedForIndex:(int)index
+{
+    if([[[NSUserDefaults standardUserDefaults] valueForKey:[self getKeyForIndex:index]] boolValue]==YES)
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
+- (void) checkedCellAtIndex:(int)index
+{
+    BOOL boolChecked = [self getCheckedForIndex:index];
+    
+    [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:!boolChecked] forKey:[self getKeyForIndex:index]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"languagelist";
@@ -82,6 +107,26 @@
     
     
     cell.textLabel.text = [langlist objectAtIndex:indexPath.row];
+    if([self getCheckedForIndex:indexPath.row]==YES){
+        NSLog(@"1");
+              cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+
+    else
+    {
+
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+/*
+    if([self->checkedIndexPath isEqual:indexPath])
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+ */
    // cell.backgroundView = [UIImage imageNamed:@"c-2-1-1.png"];
    
     // Configure the cell...
@@ -91,15 +136,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Uncheck the previous checked row
-    if(self->checkedIndexPath)
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [self checkedCellAtIndex:indexPath.row];
+    
+    if([self getCheckedForIndex:indexPath.row]==YES)
     {
-        UITableViewCell* uncheckCell = [tableView
-                                        cellForRowAtIndexPath:self->checkedIndexPath];
-        uncheckCell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
-    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    self->checkedIndexPath = indexPath;
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
 }
 
 /*
@@ -141,7 +188,47 @@
 }
 */
 
-#pragma mark - Table view delegate
+- (void)ReadDataFromPlist{
+    
+    NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
+    
+    NSString *documentsDirectory = [sysPaths objectAtIndex:0];
+    
+    NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"config.plist"];
+    
+    NSError *error;
+    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath: filePath]) //4
+        
+    {
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]; //5
+        
+        [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
+        
+        
+    }
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+    
+    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    languageSet = [propertyDict objectForKey:@"Language"];
+    
+    NSLog(@"%@", languageSet);
+   
+    
+
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [self ReadDataFromPlist];
+    
+    
+}
 
 
 

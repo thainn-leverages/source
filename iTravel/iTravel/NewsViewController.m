@@ -10,14 +10,21 @@
     Becarefull, program can crah when using with MBProgressHUD
 */
 
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0)
+
+#define urlnews [NSURL URLWithString:@"http://192.168.1.224/tourAPI/Tours/getNews"]
+#define urlEvent [NSURL URLWithString:@"http://192.168.1.224/tourAPI/Tours/getEvens"]
+#define urlpromote [NSURL URLWithString:@"http://192.168.1.224/tourAPI/Tours/getSelfs"]
+
 #import "NewsViewController.h"
 #import "NewsCell.h"
 #import "NewsiTravelCell.h"
 #import "DetailNewsiTravelViewController.h"
 
+
 @interface NewsViewController ()
 @property (nonatomic, strong) NSArray* newsList;
+@property (nonatomic, strong) NSMutableArray *news_tmp;
 
 @end
 
@@ -46,30 +53,31 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-  
-    [self showLoading];
-   // [self loadData];
-  //  NSLog(@"%d", count);
+
+    [self showLoading:urlnews];
+
 }
 
-- (void) loadData
+- (void) loadData: (NSURL*) url
 {
-     
-    str = [NSString stringWithFormat:@"http://192.168.1.224/tourAPI/Tours/getNews"];
-    urlResult =[NSURL URLWithString:str];
-    NSData* data = [NSData dataWithContentsOfURL:urlResult];
-    self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data]];
+   // NSLog(@"%@", url);
+  //  str = [NSString stringWithFormat:url];
+   // urlResult =[NSURL URLWithString:str];
+    NSData* data = [NSData dataWithContentsOfURL:url];
+    
+   // [self performSelectorOnMainThread:@selector(fetchedDatatoResult:) withObject:data waitUntilDone:YES];
+    self.newsList = [NSArray arrayWithArray:[self fetchedDatatoResult:data withUrl:url]];
+   
+   // NSLog(@"%@", self.newsList);
  
 }
 
--(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData{
+-(NSMutableArray *)fetchedDatatoResult: (NSData *)responseData withUrl:(NSURL*) url{
 
-    NSMutableArray *news_tmp = [NSMutableArray array];
+    /*NSMutableArray **/ self.news_tmp = [NSMutableArray array];
     
     NSError *errorResult = nil;
-    NSString *jsonResult = [NSString stringWithContentsOfURL:urlResult
+    NSString *jsonResult = [NSString stringWithContentsOfURL:url
                                                     encoding:NSUTF8StringEncoding
                                                        error:&errorResult];
     
@@ -78,6 +86,7 @@
         NSDictionary *jsonDictResult = [NSJSONSerialization JSONObjectWithData:jsonDataResult
                                                                        options:kNilOptions
                                                                          error:&errorResult];
+<<<<<<< HEAD
 
 
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
@@ -85,11 +94,17 @@
 
 
 
+=======
+        
+         self.keysResult = [jsonDictResult valueForKey:@"data"] ;
+        //NSLog(@"%@",   self.keysResult);
+/*
+>>>>>>> 6998eb114fc406ddbcf110136a401d73b44ea8f7
          NewsCell *news = [[NewsCell alloc] init];
          news.name = [self.keysResult valueForKey:@"title"];
          news.imageData = [self.keysResult valueForKey:@"img"];
          news.desc = [self.keysResult valueForKey:@"description"];
-        // [news_tmp addObject:news];
+*/
 
         
         for(int i=0;i<[self.keysResult count];i++){
@@ -97,11 +112,12 @@
             NewsCell *news = [[NewsCell alloc] init];
             news.name = [[self.keysResult valueForKey:@"title"] objectAtIndex:i];
             news.imageFile = [[self.keysResult valueForKey:@"img"] objectAtIndex:i];
+            news.imageData = [[self.keysResult valueForKey:@"img"] objectAtIndex:i];
             news.desc = [[self.keysResult valueForKey:@"description"] objectAtIndex:i];
-            [news_tmp addObject:news];
+            [self.news_tmp addObject:news];
         }
          
-       [self.tableView reloadData];
+      [self.tableView reloadData];
 
      }
     
@@ -112,28 +128,26 @@
                                                        delegate:nil
                                               cancelButtonTitle:@"Tắt thông báo"
                                               otherButtonTitles:nil];
-        [alert show];
+       [alert show];
         
     }
   
 
    // [HUD removeFromSuperview];
-    return news_tmp;
+    return self.news_tmp;
 
     
 }
 
-- (void) showLoading{
+- (void) showLoading:(NSURL *)url{
   
     HUD = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:HUD];
-    HUD.mode = MBProgressHUDModeAnnularDeterminate;
+    HUD.mode = MBProgressHUDModeDeterminate;
     HUD.delegate = self;
     HUD.labelText = @"Loading...";
     [HUD show:YES];
-    
-    [HUD showWhileExecuting:@selector(loadData) onTarget:self withObject:nil animated:YES];
-    
+    [HUD showWhileExecuting:@selector(loadData:) onTarget:self withObject:url animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -142,18 +156,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return [self.keysResult count];
    
@@ -162,15 +173,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
+<<<<<<< HEAD
 
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
 
 
+=======
+    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+>>>>>>> 6998eb114fc406ddbcf110136a401d73b44ea8f7
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
+    
       [cell setDetailsWithNews:newss];
 
 /*
+
    // NSLog(@"%@", self.keysResult);
       UIImageView *langImageView = (UIImageView *)[cell viewWithTag:100];
     
@@ -206,8 +224,7 @@
     NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
 
     detail.news = [[self.keysResult valueForKey:@"detail"] objectAtIndex:indexPath.row];
-    
-    
+
 }
 
 
@@ -216,19 +233,19 @@
     switch (segmentedControl.selectedSegmentIndex)
     {
         case 0:
-        //    NSLog(@"0");
+                [self showLoading:urlnews];
             break;
         case 1:
-        //    NSLog(@"1");
+                [self showLoading:urlEvent];
             break;
         case 2:
-        //     NSLog(@"2");
+                [self showLoading:urlpromote];
             break;
             
         default:
             break;
     }
- //   NSLog(@"List news");
+
 }
 
 /*
@@ -270,14 +287,9 @@
 }
 */
 
-#pragma mark - Table view delegate
-
-
-
 - (void)viewWillAppear:(BOOL)animated {
   
   //  [self.tableView reloadData];
-       
-    
+
 }
 @end

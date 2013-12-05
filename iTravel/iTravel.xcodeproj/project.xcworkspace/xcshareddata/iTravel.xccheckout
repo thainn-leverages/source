@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1D76BCFC-1335-4A6D-8E5A-3276CADC7AC2</string>
+	<string>8BBD1850-51DD-4535-9345-2BCE7BC58955</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iTravel</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AC3CE748-2C97-430C-BB50-32910F5DCB5A</key>
+		<key>8AEB3F6D-F7CA-4D1C-8BE7-EE98FF17FA50</key>
 		<string>https://github.com/Thainq/source.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iTravel/iTravel.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AC3CE748-2C97-430C-BB50-32910F5DCB5A</key>
+		<key>8AEB3F6D-F7CA-4D1C-8BE7-EE98FF17FA50</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AC3CE748-2C97-430C-BB50-32910F5DCB5A</string>
+	<string>8AEB3F6D-F7CA-4D1C-8BE7-EE98FF17FA50</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AC3CE748-2C97-430C-BB50-32910F5DCB5A</string>
+			<string>8AEB3F6D-F7CA-4D1C-8BE7-EE98FF17FA50</string>
 			<key>IDESourceControlWCCName</key>
-			<string>source</string>
+			<string>sources</string>
 		</dict>
 	</array>
 </dict>

@@ -7,6 +7,9 @@
 //
 
 #import "NewsiTravelCell.h"
+#import "UIImageView+WebCache.h"
+
+
 
 @implementation NewsiTravelCell
 
@@ -84,19 +87,28 @@
   //    [newsDesc sizeToFit];
     newsDesc.numberOfLines = 0;
     imgbackground.image = [UIImage imageNamed:@"photo-frame.png"];
+
     
-    if(news.imageData)
-    {
-        UIImage *image = [UIImage imageWithData:news.imageData];
-        newsImageView.image = image;
-    }
-    else
-    {
-        [news loadData];
-        UIImage *image = [UIImage imageWithData:news.imageData];
-        
-        newsImageView.image = image;
-    }
+  
+    [newsImageView setImageWithURL:[NSURL URLWithString:news.imageFile]
+                   placeholderImage:[UIImage imageNamed:@"placeholder"]options:SDWebImageRefreshCached];
+    /*
+        if(news.imageData
+        {
+            //NSURL *url=[NSURL URLWithString:news.imageFile];
+            [news loadData];
+            UIImage *image = [UIImage imageWithData:news.imageData];
+            newsImageView.image = image;
+        }
+        else
+        {
+            [news loadData];
+            UIImage *image = [UIImage imageWithData:news.imageData];
+            
+            newsImageView.image = image;
+        }
+  */
+   
 }
 
 @end

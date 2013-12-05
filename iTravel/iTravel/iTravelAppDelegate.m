@@ -42,26 +42,12 @@
     [tabBarItem5 setFinishedSelectedImage:[UIImage imageNamed:@"clock_1.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"clock.png"]];
     
     
-    //hack for ios 7
-  /*
-    tabBarItem1.selectedImage = [[UIImage imageNamed:@"001.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
-    
-    tabBarItem2.selectedImage = [[UIImage imageNamed:@"002.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
-    
-     tabBarItem3.selectedImage = [[UIImage imageNamed:@"003.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
-    
-    tabBarItem4.selectedImage = [[UIImage imageNamed:@"tv_1.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
-    
-    tabBarItem5.selectedImage = [[UIImage imageNamed:@"clock_1.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ];
-    
-  */ 
-    
     [tabBar setSelectionIndicatorImage:[[UIImage alloc] init]];
     
    //Hack for IOS 7
-  //  [[tabBarController tabBar] setSelectionIndicatorImage:[UIImage imageNamed:@"tab_bar_selection_indicator.png"]];
-  
-    
+   // [[tabBarController tabBar] setSelectionIndicatorImage:[UIImage imageNamed:@"tab_bar_selection_indicator.png"]];
+ 
+
     [[UITabBar appearance] setBackgroundColor:[UIColor clearColor]];
     UIImage* tabBarBackground = [UIImage imageNamed:@"c-2-1-1.png"];
 

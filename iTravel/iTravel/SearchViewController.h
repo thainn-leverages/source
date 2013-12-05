@@ -14,20 +14,38 @@
     IBOutlet UIActionSheet *obj_actionSheet_placeto;
     IBOutlet UIActionSheet *obj_actionSheet_price;
     IBOutlet UIActionSheet *obj_actionSheet_date;
+    
     UIDatePicker *datepicker;
     UIPickerView *pFrom;
     UIPickerView *pTo;
     UIPickerView *pPrice;
+    
     NSMutableArray *regionDataFrom;
+    NSMutableArray *regionDataTo;
+    NSMutableArray *priceData;
+    
     NSString *pFromlbl;
-    int flag;
+    NSString *pTolbl;
+    NSString *pPricelbl;
+    
+    NSString *From_str;
+    NSString *To_str;
+    NSString *Price_str;
+    NSString *Date_str;
+    NSDate *datesave;
+    
+    int flagFrom;
+    int flagTo;
+    int flagPrice;
                      
-   
+    NSDateFormatter* dateFormatter;
 }
 
 
 @property (weak, nonatomic) IBOutlet UIButton *search;
 @property (weak, nonatomic) IBOutlet UIButton *PlaceFrom;
+@property (weak, nonatomic) IBOutlet UIButton *PlaceTo;
+
 @property (weak, nonatomic) IBOutlet UIButton *Price;
 
 @property (weak, nonatomic) IBOutlet UIButton *DateSearch;
