@@ -88,7 +88,7 @@
                                                                          error:&errorResult];
         
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
-        NSLog(@"%@",   self.keysResult);
+        //NSLog(@"%@",   self.keysResult);
 /*
          NewsCell *news = [[NewsCell alloc] init];
          news.name = [self.keysResult valueForKey:@"title"];

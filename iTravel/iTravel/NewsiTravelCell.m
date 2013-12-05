@@ -91,7 +91,7 @@
     
   
     [newsImageView setImageWithURL:[NSURL URLWithString:news.imageFile]
-                   placeholderImage:[UIImage imageNamed:@"avatar-placeholder.png"]options:SDWebImageRefreshCached];
+                   placeholderImage:[UIImage imageNamed:@"placeholder"]options:SDWebImageRefreshCached];
     /*
         if(news.imageData
         {

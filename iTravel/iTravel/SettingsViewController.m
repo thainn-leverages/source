@@ -32,8 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
-    self.tableView.backgroundColor = mainColor;
+  //  UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
+  //  self.tableView.backgroundColor = mainColor;
     
     
     SettingCells *langlist = [SettingCells new];
@@ -53,6 +53,9 @@
 }
 
 - (IBAction)cancel:(id)sender {
+        [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)choose:(id)sender {
         [self dismissViewControllerAnimated:YES completion:nil];
 }
 

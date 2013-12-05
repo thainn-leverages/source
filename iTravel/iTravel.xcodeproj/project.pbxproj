@@ -154,6 +154,7 @@
 		07A71A3318473CF1009F4A2B /* File-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A71A3018473CF1009F4A2B /* File-48.png */; };
 		07A71A3418473CF1009F4A2B /* Gift-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A71A3118473CF1009F4A2B /* Gift-48.png */; };
 		07A71A3518473CF1009F4A2B /* Tag-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A71A3218473CF1009F4A2B /* Tag-48.png */; };
+		07CF91771850567800805A55 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07CF91761850567800805A55 /* config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -343,6 +344,7 @@
 		07A71A3018473CF1009F4A2B /* File-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "File-48.png"; sourceTree = "<group>"; };
 		07A71A3118473CF1009F4A2B /* Gift-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gift-48.png"; sourceTree = "<group>"; };
 		07A71A3218473CF1009F4A2B /* Tag-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tag-48.png"; sourceTree = "<group>"; };
+		07CF91761850567800805A55 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = config.plist; path = ../config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -677,6 +679,7 @@
 			children = (
 				0745EB941842E37600CC4070 /* LanguageList.h */,
 				0745EB951842E37600CC4070 /* LanguageList.m */,
+				07CF91761850567800805A55 /* config.plist */,
 				073E1FA418349DAA009C8ADF /* SettingsViewController.h */,
 				073C7FC218444C3F00023CF2 /* SettingsViewController.m */,
 			);
@@ -830,6 +833,7 @@
 				072E63E8183C411A00127A57 /* DacLac.png in Resources */,
 				072E63E9183C411A00127A57 /* DacNong.png in Resources */,
 				072E63EA183C411A00127A57 /* DaNang.png in Resources */,
+				07CF91771850567800805A55 /* config.plist in Resources */,
 				072E63EB183C411A00127A57 /* DaoPhuQuoc.png in Resources */,
 				072E63EC183C411A00127A57 /* DienBienPhu.png in Resources */,
 				072E63ED183C411A00127A57 /* DongNai.png in Resources */,

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LanguageList : UITableViewController
+@interface LanguageList : UITableViewController{
+
+    NSString *languageSet;
+}
 
 @end
