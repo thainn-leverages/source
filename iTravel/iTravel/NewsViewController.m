@@ -78,12 +78,10 @@
         NSDictionary *jsonDictResult = [NSJSONSerialization JSONObjectWithData:jsonDataResult
                                                                        options:kNilOptions
                                                                          error:&errorResult];
-        
-
 
 
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
-          NSLog(@"%@",   self.keysResult);
+
 
 
 
@@ -165,9 +163,8 @@
 {
     static NSString *CellIdentifier = @"NewsCell";
 
-
-
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
 
 
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
