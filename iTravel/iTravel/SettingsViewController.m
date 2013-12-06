@@ -8,6 +8,7 @@
 
 #import "SettingsViewController.h"
 #import "SettingCells.h"
+#import "LanguageList.h"
 
 @interface SettingsViewController ()
 
@@ -19,6 +20,7 @@
 @implementation SettingsViewController{
 
     NSArray *list;
+    LanguageList *varpassed;
 }
 
 
@@ -53,13 +55,98 @@
 
    
 	// Do any additional setup after loading the view.
+    [self ReadDataFromPlist];
+    //NSLog(@"%@", strlang);
 }
 
 - (IBAction)cancel:(id)sender {
         [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)choose:(id)sender {
+    
+        [self SavePlist:strlang];
         [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (void) SavePlist:(NSString *)str{
+    
+    NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
+    
+    NSString *documentsDirectory = [sysPaths objectAtIndex:0];
+    
+    NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"config.plist"];
+    NSError *errors;
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath: filePath])
+    {
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]; //5
+        
+        [fileManager copyItemAtPath:bundle toPath: filePath error:&errors];
+        
+    }
+    
+    NSString *plistPath_1 = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+    
+    NSDictionary *plistDict = [NSDictionary dictionaryWithObject:str forKey:@"Language"];
+    
+    
+    NSString *error = nil;
+    // create NSData from dictionary
+    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:plistDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
+    
+    if(plistData)
+    {
+        
+        [plistData writeToFile:plistPath_1 atomically:YES];
+        
+
+    }
+
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Có lỗi xảy ra!"
+                                                        message:@"Thực hiện lại thao tác chọn ngôn ngữ"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Tắt thông báo"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+}
+
+- (void)ReadDataFromPlist{
+    
+    NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
+    
+    NSString *documentsDirectory = [sysPaths objectAtIndex:0];
+    
+    NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"config.plist"];
+    
+    NSError *error;
+    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath: filePath]) //4
+        
+    {
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]; //5
+        
+        [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
+        
+        
+    }
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+    
+    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    strlang = [propertyDict objectForKey:@"Language"];
+   
+  //
+  
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -71,38 +158,6 @@
 {
     return NSLocalizedString(@"LANGUAGE_CHOOSEN",nil);
 }
-*/
-/*
-- (void) ReadDataFromPlist{
-    
-    NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
-    
-    NSString *documentsDirectory = [sysPaths objectAtIndex:0];
-    
-    NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"user.plist"];
-    
-    NSError *error;
-    
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if (![fileManager fileExistsAtPath: filePath]) //4
-        
-    {
-        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"user" ofType:@"plist"]; //5
-        
-        [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
-        
-        
-    }
-    
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"user" ofType:@"plist"];
-    
-    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-    
-     
-}
- 
 */
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
@@ -149,8 +204,9 @@
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
    
-    NSLog(@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]);
-    if([[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]==0){
+   // NSLog(@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]);
+   // NSLog(@"%@", strlang);
+    if([strlang integerValue]==0 ){
         langDetailLabel.text = @"Viet Nam";
     }
     else{
@@ -163,7 +219,18 @@
 }
 
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"languagechoose"])
+    {
+      //  NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+       
+        varpassed = segue.destinationViewController;
+        varpassed.langdata = strlang;
+      
+        
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {

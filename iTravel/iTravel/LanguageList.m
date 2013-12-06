@@ -104,19 +104,14 @@
 {
     static NSString *CellIdentifier = @"languagelist";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    
+   
     cell.textLabel.text = [langlist objectAtIndex:indexPath.row];
-    if([self getCheckedForIndex:indexPath.row]==YES){
-    //    NSLog(@"1");
+    if([self.langdata integerValue]==indexPath.row){
+
+        
               cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
+   }
 
-    else
-    {
-
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
 /*
     if([self->checkedIndexPath isEqual:indexPath])
     {
@@ -126,9 +121,7 @@
     {
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
- */
-   // cell.backgroundView = [UIImage imageNamed:@"c-2-1-1.png"];
-   
+*/
     // Configure the cell...
     
     return cell;
@@ -136,17 +129,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Uncheck the previous checked row
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    [self checkedCellAtIndex:indexPath.row];
-    
-    if([self getCheckedForIndex:indexPath.row]==YES)
+    if(self->checkedIndexPath)
     {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        UITableViewCell* uncheckCell = [tableView
+                                        cellForRowAtIndexPath:self->checkedIndexPath];
+        uncheckCell.accessoryType = UITableViewCellAccessoryNone;
     }
-    else
-    {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    self->checkedIndexPath = indexPath;
+   
 }
 
 /*
@@ -188,46 +180,14 @@
 }
 */
 
-- (void)ReadDataFromPlist{
-    
-    NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
-    
-    NSString *documentsDirectory = [sysPaths objectAtIndex:0];
-    
-    NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"config.plist"];
-    
-    NSError *error;
-    
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if (![fileManager fileExistsAtPath: filePath]) //4
-        
-    {
-        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]; //5
-        
-        [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
-        
-        
-    }
-    
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
-    
-    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-    
-    languageSet = [propertyDict objectForKey:@"Language"];
-    
-    //NSLog(@"%@", languageSet);
-   
-    
-
-}
-
 - (void)viewWillAppear:(BOOL)animated {
+ /*
+    NSIndexPath *indexPath=[NSIndexPath indexPathForRow:[self.langdata integerValue] inSection:0];
     
-    [self ReadDataFromPlist];
+    NSLog(@"%ld", (long)indexPath.row);
     
-    
+    [self.tableview selectRowAtIndexPath:indexPath animated:NO scrollPosition:0];
+ */
 }
 
 

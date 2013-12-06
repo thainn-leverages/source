@@ -109,7 +109,6 @@
 		07356A241830A13F00D88EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07356A221830A13F00D88EC6 /* InfoPlist.strings */; };
 		07356A261830A13F00D88EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07356A251830A13F00D88EC6 /* main.m */; };
 		07356A2A1830A13F00D88EC6 /* iTravelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07356A291830A13F00D88EC6 /* iTravelAppDelegate.m */; };
-		07356A331830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */; };
 		07356A361830A13F00D88EC6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07356A341830A13F00D88EC6 /* MainStoryboard_iPad.storyboard */; };
 		07356A391830A13F00D88EC6 /* iTravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07356A381830A13F00D88EC6 /* iTravelViewController.m */; };
 		07356A421830BBED00D88EC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07356A3F1830BBED00D88EC6 /* Default-568h@2x.png */; };
@@ -138,6 +137,7 @@
 		07507A2F1848605800E37E0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07507A2E1848605800E37E0D /* QuartzCore.framework */; };
 		07507A311848811D00E37E0D /* Departure Place.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07507A301848811C00E37E0D /* Departure Place.plist */; };
 		07507A33184881B200E37E0D /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07507A32184881B200E37E0D /* Destination.plist */; };
+		07516B251851BCC8003CBA4B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */; };
 		07534D1F1833469600AD9DE0 /* back-button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1D1833469600AD9DE0 /* back-button@1x.png */; };
 		07534D201833469600AD9DE0 /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1E1833469600AD9DE0 /* back-button@2x.png */; };
 		07534D251833723800AD9DE0 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07534D241833723800AD9DE0 /* FavouritesViewController.m */; };
@@ -790,7 +790,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07356A241830A13F00D88EC6 /* InfoPlist.strings in Resources */,
-				07356A331830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				07356A361830A13F00D88EC6 /* MainStoryboard_iPad.storyboard in Resources */,
 				07356A421830BBED00D88EC6 /* Default-568h@2x.png in Resources */,
 				07356A431830BBED00D88EC6 /* Default.png in Resources */,
@@ -859,6 +858,7 @@
 				072E6401183C411A00127A57 /* LongAn.png in Resources */,
 				072E6402183C411A00127A57 /* NamDinh.png in Resources */,
 				072E6403183C411A00127A57 /* NgheAn.png in Resources */,
+				07516B251851BCC8003CBA4B /* MainStoryboard_iPhone.storyboard in Resources */,
 				072E6404183C411A00127A57 /* NinhBinh.png in Resources */,
 				072E6405183C411A00127A57 /* NinhThuan.png in Resources */,
 				072E6406183C411A00127A57 /* PhuTho.png in Resources */,
@@ -1037,6 +1037,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
 				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1049,6 +1050,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
 				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

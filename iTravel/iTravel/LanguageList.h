@@ -13,4 +13,7 @@
     NSString *languageSet;
 }
 
+@property (nonatomic, strong) NSString* langdata;
+@property(nonatomic,retain) IBOutlet id tableview;
+
 @end
