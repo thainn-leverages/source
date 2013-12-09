@@ -86,20 +86,12 @@
         NSDictionary *jsonDictResult = [NSJSONSerialization JSONObjectWithData:jsonDataResult
                                                                        options:kNilOptions
                                                                          error:&errorResult];
-<<<<<<< HEAD
 
-
-         self.keysResult = [jsonDictResult valueForKey:@"data"] ;
-
-
-
-
-=======
         
          self.keysResult = [jsonDictResult valueForKey:@"data"] ;
         //NSLog(@"%@",   self.keysResult);
 /*
->>>>>>> 6998eb114fc406ddbcf110136a401d73b44ea8f7
+
          NewsCell *news = [[NewsCell alloc] init];
          news.name = [self.keysResult valueForKey:@"title"];
          news.imageData = [self.keysResult valueForKey:@"img"];
@@ -173,16 +165,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"NewsCell";
-<<<<<<< HEAD
+
 
     NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-
-
-=======
-    NewsiTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
->>>>>>> 6998eb114fc406ddbcf110136a401d73b44ea8f7
       NewsCell *newss = [self.newsList objectAtIndex:indexPath.row];
     
       [cell setDetailsWithNews:newss];

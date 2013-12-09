@@ -11,6 +11,7 @@
 @interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
 
     NSString *strlang;
+    NSUserDefaults *defaults;// = [NSUserDefaults standardUserDefaults];
 }
 
 @property (nonatomic, strong) IBOutlet UITableView* tableView;

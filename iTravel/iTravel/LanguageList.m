@@ -7,6 +7,8 @@
 //
 
 #import "LanguageList.h"
+#import "SettingsViewController.h"
+
 
 @interface LanguageList ()
 
@@ -74,7 +76,7 @@
     // Return the number of rows in the section.
     return [langlist count];
 }
-
+/*
 - (NSString *)getKeyForIndex:(int)index
 {
     return [NSString stringWithFormat:@"KEY%d",index];
@@ -91,7 +93,8 @@
         return NO;
     }
 }
-
+ */
+/*
 - (void) checkedCellAtIndex:(int)index
 {
     BOOL boolChecked = [self getCheckedForIndex:index];
@@ -99,17 +102,17 @@
     [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:!boolChecked] forKey:[self getKeyForIndex:index]];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
-
+*/
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"languagelist";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
    
     cell.textLabel.text = [langlist objectAtIndex:indexPath.row];
+    
+    //NSLogg(@"Langdada: %@",self.langdata);
     if([self.langdata integerValue]==indexPath.row){
-
-        
-              cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
    }
 
 /*
@@ -125,11 +128,20 @@
     // Configure the cell...
     
     return cell;
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Uncheck the previous checked row
-    if(self->checkedIndexPath)
+ 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+   // int rows = indexPath.row;
+    [defaults setInteger:indexPath.row forKey:@"langset"];
+    [defaults synchronize];
+
+    [self.navigationController popViewControllerAnimated:YES];
+    
+  
+    /*  if(self->checkedIndexPath)
     {
         UITableViewCell* uncheckCell = [tableView
                                         cellForRowAtIndexPath:self->checkedIndexPath];
@@ -138,7 +150,7 @@
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     self->checkedIndexPath = indexPath;
-   
+ */
 }
 
 /*
@@ -181,13 +193,7 @@
 */
 
 - (void)viewWillAppear:(BOOL)animated {
- /*
-    NSIndexPath *indexPath=[NSIndexPath indexPathForRow:[self.langdata integerValue] inSection:0];
-    
-    NSLog(@"%ld", (long)indexPath.row);
-    
-    [self.tableview selectRowAtIndexPath:indexPath animated:NO scrollPosition:0];
- */
+ 
 }
 
 

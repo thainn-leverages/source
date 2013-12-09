@@ -37,6 +37,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    defaults = [NSUserDefaults standardUserDefaults];
+    [self ReadDataFromPlist];
+    NSLog(@"Stringlangin viewdidload:%@", strlang);
+     
   //  UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
   //  self.tableView.backgroundColor = mainColor;
     
@@ -55,7 +59,7 @@
 
    
 	// Do any additional setup after loading the view.
-    [self ReadDataFromPlist];
+    
     //NSLog(@"%@", strlang);
 }
 
@@ -64,7 +68,8 @@
 }
 - (IBAction)choose:(id)sender {
     
-        [self SavePlist:strlang];
+  //  NSLog(@"String to save:%@", strlang);
+        [self SavePlist:[defaults objectForKey:@"langset"]];
         [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void) SavePlist:(NSString *)str{
@@ -94,13 +99,15 @@
     NSString *error = nil;
     // create NSData from dictionary
     NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:plistDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
-    
+   
+    NSLog(@"%@", plistPath_1)
+    ;
     if(plistData)
     {
         
         [plistData writeToFile:plistPath_1 atomically:YES];
         
-
+       // NSLog(@"Write file:%@", plistData);
     }
 
     else
@@ -205,17 +212,26 @@
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
    
    // NSLog(@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]);
-   // NSLog(@"%@", strlang);
-    if([strlang integerValue]==0 ){
-        langDetailLabel.text = @"Viet Nam";
+
+   // int rows = indexPath.row;
+   // NSLog(@"%ld", (long)[strlang integerValue] );
+    
+    langDetailLabel.text = [list objectAtIndex:[strlang integerValue]];
+  
+
+    if([[defaults objectForKey:@"langset"] integerValue] != [strlang integerValue]  ){
+        langDetailLabel.text = [list objectAtIndex:[[defaults objectForKey:@"langset"] integerValue]];
+        NSLog(@"UserDefault:%ld",(long)[[defaults objectForKey:@"langset"] integerValue] );
+        NSLog(@"%ld", (long)[strlang integerValue] );
+        
     }
     else{
-        langDetailLabel.text = @"English";
+        langDetailLabel.text = [list objectAtIndex:[strlang integerValue]];
     }
-    //NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
 
-   
-    return cell;
+
+    //NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
+      return cell;
 }
 
 
@@ -230,6 +246,12 @@
       
         
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  //  [self ReadDataFromPlist];
+   // NSLog(@"%@", [defaults objectForKey:@"langset"]);
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
