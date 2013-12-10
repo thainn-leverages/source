@@ -203,6 +203,7 @@
     
 }
 */
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     DetailNewsiTravelViewController *detail = segue.destinationViewController;

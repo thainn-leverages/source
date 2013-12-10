@@ -1228,7 +1228,7 @@
         <!--Settings View Controller-->
         <scene sceneID="2Xk-9L-IUt">
             <objects>
-                <viewController id="MFC-av-21h" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="languagelist" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MFC-av-21h" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jtQ-ts-gg3"/>
                         <viewControllerLayoutGuide type="bottom" id="3TC-0J-NKG"/>

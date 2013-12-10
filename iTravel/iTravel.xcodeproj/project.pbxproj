@@ -1034,6 +1034,7 @@
 		07356A3D1830A13F00D88EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
 				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";
@@ -1047,6 +1048,7 @@
 		07356A3E1830A13F00D88EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
 				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";

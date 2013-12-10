@@ -21,7 +21,9 @@
 
     NSArray *list;
     LanguageList *varpassed;
+    NSString *keysave;
 }
+//@synthesize rowsave = _rowsave;
 
 
 
@@ -37,13 +39,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    defaults = [NSUserDefaults standardUserDefaults];
+   // defaults = [NSUserDefaults standardUserDefaults];
+ 
     [self ReadDataFromPlist];
-    NSLog(@"Stringlangin viewdidload:%@", strlang);
-     
-  //  UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
-  //  self.tableView.backgroundColor = mainColor;
-    
+    defaults = [NSUserDefaults standardUserDefaults];
+   /*
+    UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
+    self.tableView.backgroundColor = mainColor;
+  */
+  //  NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+ //   [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     list = [NSArray arrayWithObjects:@"Việt Nam", @"English", nil];
     SettingCells *langlist = [SettingCells new];
     langlist.name = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
@@ -51,29 +56,44 @@
     
     self.boldFontName = @"Avenir-Black";
      self.onColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:1.0f];
-  //  langlist.imageFile = @"language.png";
 
-  //  self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"c-2-1-1.png"]];
-  //  UINavigationBar *myBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
- //   [self.view addSubview:myBar];
-
+/*
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"c-2-1-1.png"]];
+    UINavigationBar *myBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [self.view addSubview:myBar];
+*/
    
 	// Do any additional setup after loading the view.
     
-    //NSLog(@"%@", strlang);
+   
 }
 
 - (IBAction)cancel:(id)sender {
+    NSDictionary *defaultsDictionary = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
+    for (NSString *key in [defaultsDictionary allKeys]) {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
         [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)choose:(id)sender {
-    
-  //  NSLog(@"String to save:%@", strlang);
-        [self SavePlist:[defaults objectForKey:@"langset"]];
-        [self dismissViewControllerAnimated:YES completion:nil];
+    if ([defaults objectForKey:@"langset"]!=NULL) {
+         [self SavePlist:[defaults objectForKey:@"langset"]];
+    }
+    else{
+         [self SavePlist:strlang ];
+    }
+
+   
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void) SavePlist:(NSString *)str{
+  
     
+    //run on real device
+   /*
+  
     NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
     
     NSString *documentsDirectory = [sysPaths objectAtIndex:0];
@@ -92,16 +112,30 @@
     }
     
     NSString *plistPath_1 = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+  
+    NSDictionary *plistDict = [NSDictionary dictionaryWithObject:str forKey:@"Language"];
+  */
     
+    //run on simulator
+
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    
+    NSString *plistPath_1 = [documentsPath stringByAppendingPathComponent:@"config.plist"];
+    
+    NSString *bundleFile = [[NSBundle mainBundle]pathForResource:@"config" ofType:@"plist"];
+    
+    
+    //copy the file from the bundle to the doc directory
+    [[NSFileManager defaultManager]copyItemAtPath:bundleFile toPath:plistPath_1 error:nil];
+ //End codes run on simulator
+    NSString *error;
     NSDictionary *plistDict = [NSDictionary dictionaryWithObject:str forKey:@"Language"];
     
-    
-    NSString *error = nil;
     // create NSData from dictionary
     NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:plistDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
    
-    NSLog(@"%@", plistPath_1)
-    ;
+   // NSLog(@"%@", plistPath_1);
     if(plistData)
     {
         
@@ -123,7 +157,9 @@
 }
 
 - (void)ReadDataFromPlist{
-    
+  
+    //Run on mobile
+/*
     NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
     
     NSString *documentsDirectory = [sysPaths objectAtIndex:0];
@@ -146,7 +182,21 @@
     }
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+  */
     
+    //Run on simulator
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    
+    NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"config.plist"];
+    
+    NSString *bundleFile = [[NSBundle mainBundle]pathForResource:@"config" ofType:@"plist"];
+    
+    
+    //copy the file from the bundle to the doc directory
+    [[NSFileManager defaultManager]copyItemAtPath:bundleFile toPath:plistPath error:nil];
+    
+    //End run on simulator
     NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
     
     strlang = [propertyDict objectForKey:@"Language"];
@@ -172,7 +222,7 @@
     headerView.backgroundColor = [UIColor clearColor];
     
     
-    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(30, 9, 250, 40)];
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(30, 9, 250, 42)];
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont fontWithName:self.boldFontName size:15.0f];
     label.textColor = self.onColor;
@@ -210,24 +260,20 @@
     langLabel.text = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
-   
-   // NSLog(@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"KEY1"]);
 
-   // int rows = indexPath.row;
-   // NSLog(@"%ld", (long)[strlang integerValue] );
-    
-    langDetailLabel.text = [list objectAtIndex:[strlang integerValue]];
-  
 
-    if([[defaults objectForKey:@"langset"] integerValue] != [strlang integerValue]  ){
-        langDetailLabel.text = [list objectAtIndex:[[defaults objectForKey:@"langset"] integerValue]];
-        NSLog(@"UserDefault:%ld",(long)[[defaults objectForKey:@"langset"] integerValue] );
-        NSLog(@"%ld", (long)[strlang integerValue] );
-        
-    }
-    else{
+  //   int rowsave = [defaults integerForKey:@"langset"];
+  ///   NSLog(@"%d",rowsave );
+      if([defaults objectForKey:@"langset"]){
+
+        langDetailLabel.text =[list objectAtIndex:[defaults integerForKey:@"langset"]];
+      }
+      else{
+          
         langDetailLabel.text = [list objectAtIndex:[strlang integerValue]];
-    }
+      }
+    
+  
 
 
     //NSLocalizedString(@"LANGUAGE_LABEL",@"English");//@"Viet Nam";//recipe.detail;
@@ -252,6 +298,7 @@
   //  [self ReadDataFromPlist];
    // NSLog(@"%@", [defaults objectForKey:@"langset"]);
     [self.tableView reloadData];
+   
 }
 
 - (void)didReceiveMemoryWarning
