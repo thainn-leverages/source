@@ -31,7 +31,7 @@
   //  UIColor* darkColor = [UIColor colorWithRed:10.0/255 green:78.0/255 blue:108.0/255 alpha:1.0f];
     
 //    NSString* fontName = @"Avenir-Black";
-    NSString* boldFontName = @"Avenir-Black";
+    NSString* boldFontName = @"Avenir";
  //   self.view.backgroundColor = mainColor;
   
     
@@ -44,7 +44,8 @@
      self.search.backgroundColor = mainColor;
      self.search.layer.cornerRadius = 3.0f;
      self.search.titleLabel.font = [UIFont fontWithName:boldFontName size:20.0f];
-    [self.search setTitle:@"SEARCH" forState:UIControlStateNormal];
+    
+    
     [self.search setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.search setTitleColor:[UIColor colorWithWhite:1.0f alpha:0.5f] forState:UIControlStateHighlighted];
     
@@ -167,9 +168,7 @@
 }
 
 - (IBAction)CallshowPicker:(id)sender {
-   
     [self showPicker:[sender tag]];
-    //NSLog(@"%ld", (long)[sender tag]);
 }
 
 - (IBAction)CallShowDatePicker:(id)sender {
@@ -240,8 +239,7 @@
 }
 
 - (void) showDatePicker{
-    
-    
+
     obj_actionSheet_date=[[UIActionSheet alloc]initWithTitle:@"" delegate:self cancelButtonTitle:nil  destructiveButtonTitle:nil otherButtonTitles:nil, nil];
     [obj_actionSheet_date showInView:self.view.superview];
     [obj_actionSheet_date setFrame:CGRectMake(0,225,320,300)];
@@ -309,6 +307,72 @@
         pPricelbl = [NSString stringWithFormat:@"%@",[priceData objectAtIndex:[pPrice selectedRowInComponent:0]]];
         flagPrice = [pPrice selectedRowInComponent:0];
     }
+}
+    
+- (void)ReadDataFromPlist{
+    
+    //Run on mobile
+    /*
+     NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
+     
+     NSString *documentsDirectory = [sysPaths objectAtIndex:0];
+     
+     NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"config.plist"];
+     
+     NSError *error;
+     
+     
+     NSFileManager *fileManager = [NSFileManager defaultManager];
+     
+     if (![fileManager fileExistsAtPath: filePath]) //4
+     
+     {
+     NSString *bundle = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]; //5
+     
+     [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
+     
+     
+     }
+     
+     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+     */
+    
+    //Run on simulator
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    
+    NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"config.plist"];
+    
+    NSString *bundleFile = [[NSBundle mainBundle]pathForResource:@"config" ofType:@"plist"];
+    
+    
+    //copy the file from the bundle to the doc directory
+    [[NSFileManager defaultManager]copyItemAtPath:bundleFile toPath:plistPath error:nil];
+    
+    //End run on simulator
+    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    strlang = [propertyDict objectForKey:@"Language"];
+
+}
+    
+- (void)viewWillAppear:(BOOL)animated {
+    [self ReadDataFromPlist];
+    if([strlang integerValue] == 0){
+        [self.search setTitle:  @"TÌM KIẾM" forState:UIControlStateNormal];
+        self.lbl_from.text   =  @"Nơi đi:";
+        self.lbl_place.text  =  @"Nơi đến:";
+        self.lbl_price.text  =  @"Giá tiền:";        
+        self.lbl_date.text   =  @"Ngày xuất phát:";
+        
+    }else{
+        [self.search setTitle: @"SEARCH" forState:UIControlStateNormal];
+        self.lbl_from.text  =  @"Departure place:";
+        self.lbl_place.text =  @"Destination:";
+        self.lbl_price.text =  @"Price:";
+        self.lbl_date.text  =  @"Departure date:";
+    }
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -21,8 +21,9 @@
 @implementation SettingsViewController{
 
     NSArray *list;
+    NSArray *listcode;
     LanguageList *varpassed;
-    NSString *keysave;
+  //  NSString *keysave;
 }
 //@synthesize rowsave = _rowsave;
 
@@ -44,18 +45,22 @@
  
     [self ReadDataFromPlist];
     defaults = [NSUserDefaults standardUserDefaults];
+    
+    
+   
    /*
     UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
     self.tableView.backgroundColor = mainColor;
   */
-  //  NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
- //   [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+ 
     list = [NSArray arrayWithObjects:@"Việt Nam", @"English", nil];
+    listcode = [NSArray arrayWithObjects:@"vi-VN",@"en", nil];
+    
     SettingCells *langlist = [SettingCells new];
     langlist.name = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"");
     langlist.detail = NSLocalizedString(@"LANGUAGE_LABEL",@"E");
     
-    self.boldFontName = @"Avenir-Black";
+   self.boldFontName = @"Avenir";
      self.onColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:1.0f];
 
 /*
@@ -85,8 +90,10 @@
     else{
          [self SavePlist:strlang ];
     }
+    [TSLanguageManager setSelectedLanguage:strsave];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 
-    [TSLanguageManager setSelectedLanguage:kLMVietnam];
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void) SavePlist:(NSString *)str{
@@ -229,6 +236,12 @@
     label.textColor = self.onColor;
     
     label.text = NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
+    if([strlang integerValue] ==0 ){
+        label.text = @"NGÔN NGỮ";
+    }
+    else{
+        label.text = @"LANGUAGE";
+    }
     
     [headerView addSubview:label];
     
@@ -258,7 +271,13 @@
 
     
     UILabel *langLabel = (UILabel *)[cell viewWithTag:101];
-    langLabel.text = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
+       langLabel.text = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
+    if([strlang integerValue] ==0 ){
+        langLabel.text = @"Ngôn Ngữ";
+    }
+    else{
+        langLabel.text = @"Language";
+    }
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
 
@@ -268,10 +287,14 @@
       if([defaults objectForKey:@"langset"]){
 
         langDetailLabel.text =  NSLocalizedString([list objectAtIndex:[defaults integerForKey:@"langset"]],@"");
+          
+          strsave = [listcode objectAtIndex:[defaults integerForKey:@"langset"]];
+          
       }
       else{
           
         langDetailLabel.text = NSLocalizedString([list objectAtIndex:[strlang integerValue]],@"");
+          strsave = [listcode objectAtIndex:[strlang integerValue]] ;
       }
     
   
@@ -296,10 +319,11 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  //  [self ReadDataFromPlist];
-   // NSLog(@"%@", [defaults objectForKey:@"langset"]);
-    [self.tableView reloadData];
+    [self ReadDataFromPlist];
    
+  //  [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:strsave, nil]
+ //                                             forKey:@"AppleLanguages"];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning

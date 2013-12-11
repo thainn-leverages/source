@@ -39,8 +39,14 @@
     int flagPrice;
                      
     NSDateFormatter* dateFormatter;
+    NSString *strlang;
 }
 
+    @property (weak, nonatomic) IBOutlet UILabel *lbl_from;
+    @property (weak, nonatomic) IBOutlet UILabel *lbl_place;
+    
+    @property (weak, nonatomic) IBOutlet UILabel *lbl_price;
+    @property (weak, nonatomic) IBOutlet UILabel *lbl_date;
 
 @property (weak, nonatomic) IBOutlet UIButton *search;
 @property (weak, nonatomic) IBOutlet UIButton *PlaceFrom;
