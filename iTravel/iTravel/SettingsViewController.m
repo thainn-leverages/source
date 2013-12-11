@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "SettingCells.h"
 #import "LanguageList.h"
+#import "TSLanguageManager.h"
 
 @interface SettingsViewController ()
 
@@ -51,8 +52,8 @@
  //   [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     list = [NSArray arrayWithObjects:@"Việt Nam", @"English", nil];
     SettingCells *langlist = [SettingCells new];
-    langlist.name = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
-    langlist.detail = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_LABEL",@"English");
+    langlist.name = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"");
+    langlist.detail = NSLocalizedString(@"LANGUAGE_LABEL",@"E");
     
     self.boldFontName = @"Avenir-Black";
      self.onColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:1.0f];
@@ -85,7 +86,7 @@
          [self SavePlist:strlang ];
     }
 
-   
+    [TSLanguageManager setSelectedLanguage:kLMVietnam];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void) SavePlist:(NSString *)str{
@@ -227,7 +228,7 @@
     label.font = [UIFont fontWithName:self.boldFontName size:15.0f];
     label.textColor = self.onColor;
     
-    label.text =@"LANGUAGE"; //NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
+    label.text = NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
     
     [headerView addSubview:label];
     
@@ -257,7 +258,7 @@
 
     
     UILabel *langLabel = (UILabel *)[cell viewWithTag:101];
-    langLabel.text = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
+    langLabel.text = NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
 
@@ -266,11 +267,11 @@
   ///   NSLog(@"%d",rowsave );
       if([defaults objectForKey:@"langset"]){
 
-        langDetailLabel.text =[list objectAtIndex:[defaults integerForKey:@"langset"]];
+        langDetailLabel.text =  NSLocalizedString([list objectAtIndex:[defaults integerForKey:@"langset"]],@"");
       }
       else{
           
-        langDetailLabel.text = [list objectAtIndex:[strlang integerValue]];
+        langDetailLabel.text = NSLocalizedString([list objectAtIndex:[strlang integerValue]],@"");
       }
     
   

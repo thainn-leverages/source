@@ -1,0 +1,42 @@
+
+/* Class = "IBUIButton"; normalTitle = "---All---"; ObjectID = "6mO-JF-UQU"; */
+"6mO-JF-UQU.normalTitle" = "---All---";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "7Fq-gM-SuI"; */
+"7Fq-gM-SuI.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "BUTTON"; ObjectID = "9KK-R8-Top"; */
+"9KK-R8-Top.normalTitle" = "BUTTON";
+
+/* Class = "IBUINavigationItem"; title = "Search tour"; ObjectID = "HvP-Wd-3Yv"; */
+"HvP-Wd-3Yv.title" = "Search tour";
+
+/* Class = "IBUILabel"; text = "Language"; ObjectID = "LO6-Kg-rZT"; */
+"LO6-Kg-rZT.text" = "Language";
+
+/* Class = "IBUILabel"; text = "Destination:"; ObjectID = "M8P-Kl-6D3"; */
+"M8P-Kl-6D3.text" = "Destination:";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "SHk-Ms-ByW"; */
+"SHk-Ms-ByW.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Price:"; ObjectID = "UlK-hX-rTd"; */
+"UlK-hX-rTd.text" = "Price:";
+
+/* Class = "IBUILabel"; text = "Departure place:"; ObjectID = "VSf-Ds-yBD"; */
+"VSf-Ds-yBD.text" = "Departure place:";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "VeV-AD-AVL"; */
+"VeV-AD-AVL.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "---All---"; ObjectID = "WDv-jg-jMx"; */
+"WDv-jg-jMx.normalTitle" = "---All---";
+
+/* Class = "IBUILabel"; text = "Viet Nam"; ObjectID = "koa-9M-Zda"; */
+"koa-9M-Zda.text" = "Viet Nam";
+
+/* Class = "IBUILabel"; text = "Departure date:"; ObjectID = "ppQ-jo-Rj4"; */
+"ppQ-jo-Rj4.text" = "Departure date:";
+
+/* Class = "IBUIButton"; normalTitle = "---All---"; ObjectID = "uZy-u2-Zfj"; */
+"uZy-u2-Zfj.normalTitle" = "---All---";
