@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "SettingCells.h"
 #import "LanguageList.h"
+#import "TSLanguageManager.h"
 
 @interface SettingsViewController ()
 
@@ -43,6 +44,8 @@
  
     [self ReadDataFromPlist];
     defaults = [NSUserDefaults standardUserDefaults];
+   // NSString *aString = [TSLanguageManager localizedString:@"Hello"];
+   // NSLog(@"%@", aString);
    /*
     UIColor* mainColor = [UIColor colorWithRed:100.0/255 green:168.0/255 blue:228.0/255 alpha:1.0f];
     self.tableView.backgroundColor = mainColor;
@@ -51,12 +54,14 @@
  //   [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     list = [NSArray arrayWithObjects:@"Việt Nam", @"English", nil];
     SettingCells *langlist = [SettingCells new];
-    langlist.name = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
+    langlist.name = NSLocalizedString(@"LANGUAGE_LBL",@"Language");
+     /*@"LANGUAGE";*///NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");
     langlist.detail = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_LABEL",@"English");
     
     self.boldFontName = @"Avenir-Black";
      self.onColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:1.0f];
-
+    
+ 
 /*
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"c-2-1-1.png"]];
     UINavigationBar *myBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
@@ -85,8 +90,9 @@
          [self SavePlist:strlang ];
     }
 
-   
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+   //[TSLanguageManager setSelectedLanguage:@"vi"];
 }
 - (void) SavePlist:(NSString *)str{
   
@@ -227,7 +233,7 @@
     label.font = [UIFont fontWithName:self.boldFontName size:15.0f];
     label.textColor = self.onColor;
     
-    label.text =@"LANGUAGE"; //NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
+    label.text = NSLocalizedString(@"LANGUAGE_LBL",@"Language"); //NSLocalizedString(@"LANGUAGE",@"LANGUAGE");
     
     [headerView addSubview:label];
     
@@ -257,7 +263,7 @@
 
     
     UILabel *langLabel = (UILabel *)[cell viewWithTag:101];
-    langLabel.text = @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
+    langLabel.text = NSLocalizedString(@"LANGUAGE_LBL",@"Language");// @"LANGUAGE";//NSLocalizedString(@"LANGUAGE_CHOOSEN",@"Language");//@"Language";
     
     UILabel *langDetailLabel = (UILabel *)[cell viewWithTag:102];
 
