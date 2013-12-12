@@ -57,6 +57,7 @@
 		074309CC18594F94003EDC90 /* ListTourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 074309CB18594F94003EDC90 /* ListTourCell.m */; };
 		074309CF18595080003EDC90 /* ListTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074309CE18595080003EDC90 /* ListTourViewController.m */; };
 		074309D118596A9F003EDC90 /* profile-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 074309D018596A9F003EDC90 /* profile-1.jpg */; };
+		074309D41859B954003EDC90 /* DetailTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074309D31859B954003EDC90 /* DetailTourViewController.m */; };
 		0745EB961842E37600CC4070 /* LanguageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745EB951842E37600CC4070 /* LanguageList.m */; };
 		0745EB981843025E00CC4070 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0745EB971843025E00CC4070 /* back.png */; };
 		0745EB9A1843249300CC4070 /* language.png in Resources */ = {isa = PBXBuildFile; fileRef = 0745EB991843249300CC4070 /* language.png */; };
@@ -175,6 +176,8 @@
 		074309CD18595080003EDC90 /* ListTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTourViewController.h; sourceTree = "<group>"; };
 		074309CE18595080003EDC90 /* ListTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTourViewController.m; sourceTree = "<group>"; };
 		074309D018596A9F003EDC90 /* profile-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profile-1.jpg"; sourceTree = "<group>"; };
+		074309D21859B954003EDC90 /* DetailTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTourViewController.h; sourceTree = "<group>"; };
+		074309D31859B954003EDC90 /* DetailTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTourViewController.m; sourceTree = "<group>"; };
 		0745EB941842E37600CC4070 /* LanguageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageList.h; sourceTree = "<group>"; };
 		0745EB951842E37600CC4070 /* LanguageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageList.m; sourceTree = "<group>"; };
 		0745EB971843025E00CC4070 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -546,6 +549,8 @@
 			children = (
 				074309CD18595080003EDC90 /* ListTourViewController.h */,
 				074309CE18595080003EDC90 /* ListTourViewController.m */,
+				074309D21859B954003EDC90 /* DetailTourViewController.h */,
+				074309D31859B954003EDC90 /* DetailTourViewController.m */,
 			);
 			name = TourList;
 			sourceTree = "<group>";
@@ -703,6 +708,7 @@
 				0708FB80184593FE006B7296 /* MBProgressHUD.m in Sources */,
 				07A19E0C1845B66F00FDBD55 /* NewsCell.m in Sources */,
 				07A19E111845EFA700FDBD55 /* NewsiTravelCell.m in Sources */,
+				074309D41859B954003EDC90 /* DetailTourViewController.m in Sources */,
 				07A71A2C1846E300009F4A2B /* DetailNewsiTravelViewController.m in Sources */,
 				07507A2C18481A6800E37E0D /* Reachability.m in Sources */,
 				074309CC18594F94003EDC90 /* ListTourCell.m in Sources */,
