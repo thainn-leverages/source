@@ -1,18 +1,18 @@
 //
-//  HistoryViewController.m
+//  ListTourViewController.m
 //  iTravel
 //
-//  Created by Thainq on 13/11/2013.
+//  Created by Thainq on 12/12/2013.
 //  Copyright (c) 2013 Thainq. All rights reserved.
 //
 
-#import "HistoryViewController.h"
+#import "ListTourViewController.h"
 
-@interface HistoryViewController ()
+@interface ListTourViewController ()
 
 @end
 
-@implementation HistoryViewController
+@implementation ListTourViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
 	// Do any additional setup after loading the view.
 }
 

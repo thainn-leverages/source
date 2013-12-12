@@ -53,7 +53,7 @@
     //self.view.backgroundColor = [UI012Color greenColor];
 	// Do any additional setup after loading the view.
     
-    regionDataFrom = [NSMutableArray arrayWithObjects:@"---All---",@"Tp. Hồ Chí Minh",@"Hà Nội", @"Đà Nẵng", @"Cần Thơ", @"Hải Phòng", @"Nha Trang", @"Huế", nil];
+    regionDataFrom = [NSMutableArray arrayWithObjects:@"Tp. Hồ Chí Minh",@"Hà Nội", @"Đà Nẵng", @"Cần Thơ", @"Hải Phòng", @"Nha Trang", @"Huế", nil];
     regionDataTo = [NSMutableArray arrayWithObjects:@"---All---",@"Đồng Tháp",@"Trà Vinh",@"Bến Tre", @"Kiên Giang", @"Cần Thơ", @"Đà Lạt", @"Long An", @"Tiền Giang", nil];
     
     priceData      = [NSMutableArray arrayWithObjects:@"---All---",@"Dưới 3 triệu",@"3-7 triệu", @"7-12 triệu", @"12-15 triệu", @"15-18 triệu", @"18-22 triệu", @"22-32 triệu",@"Trên 32 triệu", nil];
