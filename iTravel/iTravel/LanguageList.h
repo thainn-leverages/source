@@ -11,6 +11,7 @@
 @interface LanguageList : UITableViewController{
 
     NSString *languageSet;
+     NSUserDefaults *defaults;
 }
 
 @property (nonatomic, strong) NSString* langdata;

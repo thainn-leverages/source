@@ -35,74 +35,6 @@
 		07104C56184F0D19007F669D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07104C55184F0D19007F669D /* MapKit.framework */; };
 		07104C59184F14E8007F669D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 07104C57184F14E8007F669D /* placeholder.png */; };
 		07104C5A184F14E8007F669D /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07104C58184F14E8007F669D /* placeholder@2x.png */; };
-		072E63D9183C411A00127A57 /* AnGiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E6396183C411A00127A57 /* AnGiang.png */; };
-		072E63DA183C411A00127A57 /* BacGiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E6397183C411A00127A57 /* BacGiang.png */; };
-		072E63DB183C411A00127A57 /* BacKan.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E6398183C411A00127A57 /* BacKan.png */; };
-		072E63DC183C411A00127A57 /* Baclieu.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E6399183C411A00127A57 /* Baclieu.png */; };
-		072E63DD183C411A00127A57 /* BacNinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E639A183C411A00127A57 /* BacNinh.png */; };
-		072E63DE183C411A00127A57 /* BaRia_VungTau.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E639B183C411A00127A57 /* BaRia_VungTau.png */; };
-		072E63DF183C411A00127A57 /* BenTre.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E639C183C411A00127A57 /* BenTre.png */; };
-		072E63E0183C411A00127A57 /* BinhDinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E639D183C411A00127A57 /* BinhDinh.png */; };
-		072E63E1183C411A00127A57 /* BinhDuong.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E639E183C411A00127A57 /* BinhDuong.png */; };
-		072E63E2183C411A00127A57 /* BinhPHuoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E639F183C411A00127A57 /* BinhPHuoc.png */; };
-		072E63E3183C411A00127A57 /* BinhThuan.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A0183C411A00127A57 /* BinhThuan.png */; };
-		072E63E4183C411A00127A57 /* Camau.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A1183C411A00127A57 /* Camau.png */; };
-		072E63E5183C411A00127A57 /* CanTho.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A2183C411A00127A57 /* CanTho.png */; };
-		072E63E6183C411A00127A57 /* CaoBang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A3183C411A00127A57 /* CaoBang.png */; };
-		072E63E7183C411A00127A57 /* ConDao.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A4183C411A00127A57 /* ConDao.png */; };
-		072E63E8183C411A00127A57 /* DacLac.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A5183C411A00127A57 /* DacLac.png */; };
-		072E63E9183C411A00127A57 /* DacNong.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A6183C411A00127A57 /* DacNong.png */; };
-		072E63EA183C411A00127A57 /* DaNang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A7183C411A00127A57 /* DaNang.png */; };
-		072E63EB183C411A00127A57 /* DaoPhuQuoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A8183C411A00127A57 /* DaoPhuQuoc.png */; };
-		072E63EC183C411A00127A57 /* DienBienPhu.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63A9183C411A00127A57 /* DienBienPhu.png */; };
-		072E63ED183C411A00127A57 /* DongNai.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63AA183C411A00127A57 /* DongNai.png */; };
-		072E63EE183C411A00127A57 /* DongThap.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63AB183C411A00127A57 /* DongThap.png */; };
-		072E63EF183C411A00127A57 /* GiaLai.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63AC183C411A00127A57 /* GiaLai.png */; };
-		072E63F0183C411A00127A57 /* HaGiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63AD183C411A00127A57 /* HaGiang.png */; };
-		072E63F1183C411A00127A57 /* HaiDuong.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63AE183C411A00127A57 /* HaiDuong.png */; };
-		072E63F2183C411A00127A57 /* HaiPhong.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63AF183C411A00127A57 /* HaiPhong.png */; };
-		072E63F3183C411A00127A57 /* HaNam.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B0183C411A00127A57 /* HaNam.png */; };
-		072E63F4183C411A00127A57 /* HaNoi.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B1183C411A00127A57 /* HaNoi.png */; };
-		072E63F5183C411A00127A57 /* HaTay.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B2183C411A00127A57 /* HaTay.png */; };
-		072E63F6183C411A00127A57 /* HaTinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B3183C411A00127A57 /* HaTinh.png */; };
-		072E63F7183C411A00127A57 /* HoaBinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B4183C411A00127A57 /* HoaBinh.png */; };
-		072E63F8183C411A00127A57 /* Hue.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B5183C411A00127A57 /* Hue.png */; };
-		072E63F9183C411A00127A57 /* HungYen.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B6183C411A00127A57 /* HungYen.png */; };
-		072E63FA183C411A00127A57 /* KhanhHoa.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B7183C411A00127A57 /* KhanhHoa.png */; };
-		072E63FB183C411A00127A57 /* KienGiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B8183C411A00127A57 /* KienGiang.png */; };
-		072E63FC183C411A00127A57 /* KonTum.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63B9183C411A00127A57 /* KonTum.png */; };
-		072E63FD183C411A00127A57 /* LaiChau.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63BA183C411A00127A57 /* LaiChau.png */; };
-		072E63FE183C411A00127A57 /* LamDong.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63BB183C411A00127A57 /* LamDong.png */; };
-		072E63FF183C411A00127A57 /* LangSon.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63BC183C411A00127A57 /* LangSon.png */; };
-		072E6400183C411A00127A57 /* LaoCai.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63BD183C411A00127A57 /* LaoCai.png */; };
-		072E6401183C411A00127A57 /* LongAn.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63BE183C411A00127A57 /* LongAn.png */; };
-		072E6402183C411A00127A57 /* NamDinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63BF183C411A00127A57 /* NamDinh.png */; };
-		072E6403183C411A00127A57 /* NgheAn.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C0183C411A00127A57 /* NgheAn.png */; };
-		072E6404183C411A00127A57 /* NinhBinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C1183C411A00127A57 /* NinhBinh.png */; };
-		072E6405183C411A00127A57 /* NinhThuan.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C2183C411A00127A57 /* NinhThuan.png */; };
-		072E6406183C411A00127A57 /* PhuTho.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C3183C411A00127A57 /* PhuTho.png */; };
-		072E6407183C411A00127A57 /* PhuYen.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C4183C411A00127A57 /* PhuYen.png */; };
-		072E6408183C411A00127A57 /* QuanDaoHoangSa.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C5183C411A00127A57 /* QuanDaoHoangSa.png */; };
-		072E6409183C411A00127A57 /* QuanDaoTruongSa.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C6183C411A00127A57 /* QuanDaoTruongSa.png */; };
-		072E640A183C411A00127A57 /* QuangBinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C7183C411A00127A57 /* QuangBinh.png */; };
-		072E640B183C411A00127A57 /* QuangNam.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C8183C411A00127A57 /* QuangNam.png */; };
-		072E640C183C411A00127A57 /* QuangNgai.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63C9183C411A00127A57 /* QuangNgai.png */; };
-		072E640D183C411A00127A57 /* QuangNinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63CA183C411A00127A57 /* QuangNinh.png */; };
-		072E640E183C411A00127A57 /* QuangTri.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63CB183C411A00127A57 /* QuangTri.png */; };
-		072E640F183C411A00127A57 /* SocTrang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63CC183C411A00127A57 /* SocTrang.png */; };
-		072E6410183C411A00127A57 /* SonLa.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63CD183C411A00127A57 /* SonLa.png */; };
-		072E6411183C411A00127A57 /* TayNinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63CE183C411A00127A57 /* TayNinh.png */; };
-		072E6412183C411A00127A57 /* ThaiBinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63CF183C411A00127A57 /* ThaiBinh.png */; };
-		072E6413183C411A00127A57 /* ThaiNguyen.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D0183C411A00127A57 /* ThaiNguyen.png */; };
-		072E6414183C411A00127A57 /* ThanhHoa.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D1183C411A00127A57 /* ThanhHoa.png */; };
-		072E6415183C411A00127A57 /* TienGiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D2183C411A00127A57 /* TienGiang.png */; };
-		072E6416183C411A00127A57 /* TPHCM.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D3183C411A00127A57 /* TPHCM.png */; };
-		072E6417183C411A00127A57 /* TraVinh.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D4183C411A00127A57 /* TraVinh.png */; };
-		072E6418183C411A00127A57 /* TuyenQuang.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D5183C411A00127A57 /* TuyenQuang.png */; };
-		072E6419183C411A00127A57 /* VinhLong.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D6183C411A00127A57 /* VinhLong.png */; };
-		072E641A183C411A00127A57 /* VinhPhuc.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D7183C411A00127A57 /* VinhPhuc.png */; };
-		072E641B183C411A00127A57 /* YenBai.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E63D8183C411A00127A57 /* YenBai.png */; };
-		072E641D183C61E500127A57 /* BAN DO 62 TINH.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E641C183C61E500127A57 /* BAN DO 62 TINH.png */; };
 		07356A1A1830A13F00D88EC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07356A191830A13E00D88EC6 /* UIKit.framework */; };
 		07356A1C1830A13F00D88EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07356A1B1830A13F00D88EC6 /* Foundation.framework */; };
 		07356A1E1830A13F00D88EC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07356A1D1830A13F00D88EC6 /* CoreGraphics.framework */; };
@@ -122,6 +54,11 @@
 		073E1FAA1834B041009C8ADF /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 073E1FA91834B041009C8ADF /* close.png */; };
 		073E1FAD1834B6D6009C8ADF /* tick_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 073E1FAB1834B6D5009C8ADF /* tick_blue.png */; };
 		073E1FAE1834B6D6009C8ADF /* tick_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 073E1FAC1834B6D5009C8ADF /* tick_blue@2x.png */; };
+		074309CC18594F94003EDC90 /* ListTourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 074309CB18594F94003EDC90 /* ListTourCell.m */; };
+		074309CF18595080003EDC90 /* ListTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074309CE18595080003EDC90 /* ListTourViewController.m */; };
+		074309D118596A9F003EDC90 /* profile-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 074309D018596A9F003EDC90 /* profile-1.jpg */; };
+		074309D41859B954003EDC90 /* DetailTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074309D31859B954003EDC90 /* DetailTourViewController.m */; };
+		074309D61859BD12003EDC90 /* favourites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 074309D51859BD12003EDC90 /* favourites.plist */; };
 		0745EB961842E37600CC4070 /* LanguageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745EB951842E37600CC4070 /* LanguageList.m */; };
 		0745EB981843025E00CC4070 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0745EB971843025E00CC4070 /* back.png */; };
 		0745EB9A1843249300CC4070 /* language.png in Resources */ = {isa = PBXBuildFile; fileRef = 0745EB991843249300CC4070 /* language.png */; };
@@ -138,6 +75,8 @@
 		07507A311848811D00E37E0D /* Departure Place.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07507A301848811C00E37E0D /* Departure Place.plist */; };
 		07507A33184881B200E37E0D /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07507A32184881B200E37E0D /* Destination.plist */; };
 		07516B251851BCC8003CBA4B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */; };
+		075213221858471100509458 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 075213241858471100509458 /* Localizable.strings */; };
+		0752132A1858496600509458 /* TSLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 075213291858496600509458 /* TSLanguageManager.m */; };
 		07534D1F1833469600AD9DE0 /* back-button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1D1833469600AD9DE0 /* back-button@1x.png */; };
 		07534D201833469600AD9DE0 /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07534D1E1833469600AD9DE0 /* back-button@2x.png */; };
 		07534D251833723800AD9DE0 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07534D241833723800AD9DE0 /* FavouritesViewController.m */; };
@@ -203,74 +142,6 @@
 		07104C55184F0D19007F669D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		07104C57184F14E8007F669D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		07104C58184F14E8007F669D /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
-		072E6396183C411A00127A57 /* AnGiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnGiang.png; sourceTree = "<group>"; };
-		072E6397183C411A00127A57 /* BacGiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BacGiang.png; sourceTree = "<group>"; };
-		072E6398183C411A00127A57 /* BacKan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BacKan.png; sourceTree = "<group>"; };
-		072E6399183C411A00127A57 /* Baclieu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baclieu.png; sourceTree = "<group>"; };
-		072E639A183C411A00127A57 /* BacNinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BacNinh.png; sourceTree = "<group>"; };
-		072E639B183C411A00127A57 /* BaRia_VungTau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaRia_VungTau.png; sourceTree = "<group>"; };
-		072E639C183C411A00127A57 /* BenTre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BenTre.png; sourceTree = "<group>"; };
-		072E639D183C411A00127A57 /* BinhDinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BinhDinh.png; sourceTree = "<group>"; };
-		072E639E183C411A00127A57 /* BinhDuong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BinhDuong.png; sourceTree = "<group>"; };
-		072E639F183C411A00127A57 /* BinhPHuoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BinhPHuoc.png; sourceTree = "<group>"; };
-		072E63A0183C411A00127A57 /* BinhThuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BinhThuan.png; sourceTree = "<group>"; };
-		072E63A1183C411A00127A57 /* Camau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camau.png; sourceTree = "<group>"; };
-		072E63A2183C411A00127A57 /* CanTho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CanTho.png; sourceTree = "<group>"; };
-		072E63A3183C411A00127A57 /* CaoBang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CaoBang.png; sourceTree = "<group>"; };
-		072E63A4183C411A00127A57 /* ConDao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConDao.png; sourceTree = "<group>"; };
-		072E63A5183C411A00127A57 /* DacLac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DacLac.png; sourceTree = "<group>"; };
-		072E63A6183C411A00127A57 /* DacNong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DacNong.png; sourceTree = "<group>"; };
-		072E63A7183C411A00127A57 /* DaNang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DaNang.png; sourceTree = "<group>"; };
-		072E63A8183C411A00127A57 /* DaoPhuQuoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DaoPhuQuoc.png; sourceTree = "<group>"; };
-		072E63A9183C411A00127A57 /* DienBienPhu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DienBienPhu.png; sourceTree = "<group>"; };
-		072E63AA183C411A00127A57 /* DongNai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DongNai.png; sourceTree = "<group>"; };
-		072E63AB183C411A00127A57 /* DongThap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DongThap.png; sourceTree = "<group>"; };
-		072E63AC183C411A00127A57 /* GiaLai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GiaLai.png; sourceTree = "<group>"; };
-		072E63AD183C411A00127A57 /* HaGiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaGiang.png; sourceTree = "<group>"; };
-		072E63AE183C411A00127A57 /* HaiDuong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaiDuong.png; sourceTree = "<group>"; };
-		072E63AF183C411A00127A57 /* HaiPhong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaiPhong.png; sourceTree = "<group>"; };
-		072E63B0183C411A00127A57 /* HaNam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaNam.png; sourceTree = "<group>"; };
-		072E63B1183C411A00127A57 /* HaNoi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaNoi.png; sourceTree = "<group>"; };
-		072E63B2183C411A00127A57 /* HaTay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaTay.png; sourceTree = "<group>"; };
-		072E63B3183C411A00127A57 /* HaTinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaTinh.png; sourceTree = "<group>"; };
-		072E63B4183C411A00127A57 /* HoaBinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoaBinh.png; sourceTree = "<group>"; };
-		072E63B5183C411A00127A57 /* Hue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hue.png; sourceTree = "<group>"; };
-		072E63B6183C411A00127A57 /* HungYen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HungYen.png; sourceTree = "<group>"; };
-		072E63B7183C411A00127A57 /* KhanhHoa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KhanhHoa.png; sourceTree = "<group>"; };
-		072E63B8183C411A00127A57 /* KienGiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KienGiang.png; sourceTree = "<group>"; };
-		072E63B9183C411A00127A57 /* KonTum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KonTum.png; sourceTree = "<group>"; };
-		072E63BA183C411A00127A57 /* LaiChau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaiChau.png; sourceTree = "<group>"; };
-		072E63BB183C411A00127A57 /* LamDong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LamDong.png; sourceTree = "<group>"; };
-		072E63BC183C411A00127A57 /* LangSon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LangSon.png; sourceTree = "<group>"; };
-		072E63BD183C411A00127A57 /* LaoCai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaoCai.png; sourceTree = "<group>"; };
-		072E63BE183C411A00127A57 /* LongAn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LongAn.png; sourceTree = "<group>"; };
-		072E63BF183C411A00127A57 /* NamDinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NamDinh.png; sourceTree = "<group>"; };
-		072E63C0183C411A00127A57 /* NgheAn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NgheAn.png; sourceTree = "<group>"; };
-		072E63C1183C411A00127A57 /* NinhBinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NinhBinh.png; sourceTree = "<group>"; };
-		072E63C2183C411A00127A57 /* NinhThuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NinhThuan.png; sourceTree = "<group>"; };
-		072E63C3183C411A00127A57 /* PhuTho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhuTho.png; sourceTree = "<group>"; };
-		072E63C4183C411A00127A57 /* PhuYen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhuYen.png; sourceTree = "<group>"; };
-		072E63C5183C411A00127A57 /* QuanDaoHoangSa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuanDaoHoangSa.png; sourceTree = "<group>"; };
-		072E63C6183C411A00127A57 /* QuanDaoTruongSa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuanDaoTruongSa.png; sourceTree = "<group>"; };
-		072E63C7183C411A00127A57 /* QuangBinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuangBinh.png; sourceTree = "<group>"; };
-		072E63C8183C411A00127A57 /* QuangNam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuangNam.png; sourceTree = "<group>"; };
-		072E63C9183C411A00127A57 /* QuangNgai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuangNgai.png; sourceTree = "<group>"; };
-		072E63CA183C411A00127A57 /* QuangNinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuangNinh.png; sourceTree = "<group>"; };
-		072E63CB183C411A00127A57 /* QuangTri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuangTri.png; sourceTree = "<group>"; };
-		072E63CC183C411A00127A57 /* SocTrang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SocTrang.png; sourceTree = "<group>"; };
-		072E63CD183C411A00127A57 /* SonLa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SonLa.png; sourceTree = "<group>"; };
-		072E63CE183C411A00127A57 /* TayNinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TayNinh.png; sourceTree = "<group>"; };
-		072E63CF183C411A00127A57 /* ThaiBinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThaiBinh.png; sourceTree = "<group>"; };
-		072E63D0183C411A00127A57 /* ThaiNguyen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThaiNguyen.png; sourceTree = "<group>"; };
-		072E63D1183C411A00127A57 /* ThanhHoa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThanhHoa.png; sourceTree = "<group>"; };
-		072E63D2183C411A00127A57 /* TienGiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TienGiang.png; sourceTree = "<group>"; };
-		072E63D3183C411A00127A57 /* TPHCM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPHCM.png; sourceTree = "<group>"; };
-		072E63D4183C411A00127A57 /* TraVinh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TraVinh.png; sourceTree = "<group>"; };
-		072E63D5183C411A00127A57 /* TuyenQuang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TuyenQuang.png; sourceTree = "<group>"; };
-		072E63D6183C411A00127A57 /* VinhLong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VinhLong.png; sourceTree = "<group>"; };
-		072E63D7183C411A00127A57 /* VinhPhuc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VinhPhuc.png; sourceTree = "<group>"; };
-		072E63D8183C411A00127A57 /* YenBai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YenBai.png; sourceTree = "<group>"; };
-		072E641C183C61E500127A57 /* BAN DO 62 TINH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BAN DO 62 TINH.png"; sourceTree = "<group>"; };
 		07356A161830A13E00D88EC6 /* iTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07356A191830A13E00D88EC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07356A1B1830A13F00D88EC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -301,6 +172,14 @@
 		073E1FA91834B041009C8ADF /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		073E1FAB1834B6D5009C8ADF /* tick_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick_blue.png; sourceTree = "<group>"; };
 		073E1FAC1834B6D5009C8ADF /* tick_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tick_blue@2x.png"; sourceTree = "<group>"; };
+		074309CA18594F94003EDC90 /* ListTourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTourCell.h; sourceTree = "<group>"; };
+		074309CB18594F94003EDC90 /* ListTourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTourCell.m; sourceTree = "<group>"; };
+		074309CD18595080003EDC90 /* ListTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTourViewController.h; sourceTree = "<group>"; };
+		074309CE18595080003EDC90 /* ListTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTourViewController.m; sourceTree = "<group>"; };
+		074309D018596A9F003EDC90 /* profile-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profile-1.jpg"; sourceTree = "<group>"; };
+		074309D21859B954003EDC90 /* DetailTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTourViewController.h; sourceTree = "<group>"; };
+		074309D31859B954003EDC90 /* DetailTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTourViewController.m; sourceTree = "<group>"; };
+		074309D51859BD12003EDC90 /* favourites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = favourites.plist; sourceTree = "<group>"; };
 		0745EB941842E37600CC4070 /* LanguageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageList.h; sourceTree = "<group>"; };
 		0745EB951842E37600CC4070 /* LanguageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageList.m; sourceTree = "<group>"; };
 		0745EB971843025E00CC4070 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -321,6 +200,14 @@
 		07507A2E1848605800E37E0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		07507A301848811C00E37E0D /* Departure Place.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Departure Place.plist"; sourceTree = "<group>"; };
 		07507A32184881B200E37E0D /* Destination.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destination.plist; sourceTree = "<group>"; };
+		0752131D185846B900509458 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/MainStoryboard_iPad.strings"; sourceTree = "<group>"; };
+		0752131E185846BA00509458 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/MainStoryboard_iPhone.strings"; sourceTree = "<group>"; };
+		0752131F185846BA00509458 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		075213231858471100509458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		075213251858472B00509458 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		075213261858472E00509458 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		075213281858496600509458 /* TSLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLanguageManager.h; sourceTree = "<group>"; };
+		075213291858496600509458 /* TSLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLanguageManager.m; sourceTree = "<group>"; };
 		07534D1A18332E2A00AD9DE0 /* UVNMuaThu.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNMuaThu.TTF; sourceTree = "<group>"; };
 		07534D1D1833469600AD9DE0 /* back-button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@1x.png"; sourceTree = "<group>"; };
 		07534D1E1833469600AD9DE0 /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
@@ -439,74 +326,6 @@
 		072E6395183C402D00127A57 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				072E641C183C61E500127A57 /* BAN DO 62 TINH.png */,
-				072E6396183C411A00127A57 /* AnGiang.png */,
-				072E6397183C411A00127A57 /* BacGiang.png */,
-				072E6398183C411A00127A57 /* BacKan.png */,
-				072E6399183C411A00127A57 /* Baclieu.png */,
-				072E639A183C411A00127A57 /* BacNinh.png */,
-				072E639B183C411A00127A57 /* BaRia_VungTau.png */,
-				072E639C183C411A00127A57 /* BenTre.png */,
-				072E639D183C411A00127A57 /* BinhDinh.png */,
-				072E639E183C411A00127A57 /* BinhDuong.png */,
-				072E639F183C411A00127A57 /* BinhPHuoc.png */,
-				072E63A0183C411A00127A57 /* BinhThuan.png */,
-				072E63A1183C411A00127A57 /* Camau.png */,
-				072E63A2183C411A00127A57 /* CanTho.png */,
-				072E63A3183C411A00127A57 /* CaoBang.png */,
-				072E63A4183C411A00127A57 /* ConDao.png */,
-				072E63A5183C411A00127A57 /* DacLac.png */,
-				072E63A6183C411A00127A57 /* DacNong.png */,
-				072E63A7183C411A00127A57 /* DaNang.png */,
-				072E63A8183C411A00127A57 /* DaoPhuQuoc.png */,
-				072E63A9183C411A00127A57 /* DienBienPhu.png */,
-				072E63AA183C411A00127A57 /* DongNai.png */,
-				072E63AB183C411A00127A57 /* DongThap.png */,
-				072E63AC183C411A00127A57 /* GiaLai.png */,
-				072E63AD183C411A00127A57 /* HaGiang.png */,
-				072E63AE183C411A00127A57 /* HaiDuong.png */,
-				072E63AF183C411A00127A57 /* HaiPhong.png */,
-				072E63B0183C411A00127A57 /* HaNam.png */,
-				072E63B1183C411A00127A57 /* HaNoi.png */,
-				072E63B2183C411A00127A57 /* HaTay.png */,
-				072E63B3183C411A00127A57 /* HaTinh.png */,
-				072E63B4183C411A00127A57 /* HoaBinh.png */,
-				072E63B5183C411A00127A57 /* Hue.png */,
-				072E63B6183C411A00127A57 /* HungYen.png */,
-				072E63B7183C411A00127A57 /* KhanhHoa.png */,
-				072E63B8183C411A00127A57 /* KienGiang.png */,
-				072E63B9183C411A00127A57 /* KonTum.png */,
-				072E63BA183C411A00127A57 /* LaiChau.png */,
-				072E63BB183C411A00127A57 /* LamDong.png */,
-				072E63BC183C411A00127A57 /* LangSon.png */,
-				072E63BD183C411A00127A57 /* LaoCai.png */,
-				072E63BE183C411A00127A57 /* LongAn.png */,
-				072E63BF183C411A00127A57 /* NamDinh.png */,
-				072E63C0183C411A00127A57 /* NgheAn.png */,
-				072E63C1183C411A00127A57 /* NinhBinh.png */,
-				072E63C2183C411A00127A57 /* NinhThuan.png */,
-				072E63C3183C411A00127A57 /* PhuTho.png */,
-				072E63C4183C411A00127A57 /* PhuYen.png */,
-				072E63C5183C411A00127A57 /* QuanDaoHoangSa.png */,
-				072E63C6183C411A00127A57 /* QuanDaoTruongSa.png */,
-				072E63C7183C411A00127A57 /* QuangBinh.png */,
-				072E63C8183C411A00127A57 /* QuangNam.png */,
-				072E63C9183C411A00127A57 /* QuangNgai.png */,
-				072E63CA183C411A00127A57 /* QuangNinh.png */,
-				072E63CB183C411A00127A57 /* QuangTri.png */,
-				072E63CC183C411A00127A57 /* SocTrang.png */,
-				072E63CD183C411A00127A57 /* SonLa.png */,
-				072E63CE183C411A00127A57 /* TayNinh.png */,
-				072E63CF183C411A00127A57 /* ThaiBinh.png */,
-				072E63D0183C411A00127A57 /* ThaiNguyen.png */,
-				072E63D1183C411A00127A57 /* ThanhHoa.png */,
-				072E63D2183C411A00127A57 /* TienGiang.png */,
-				072E63D3183C411A00127A57 /* TPHCM.png */,
-				072E63D4183C411A00127A57 /* TraVinh.png */,
-				072E63D5183C411A00127A57 /* TuyenQuang.png */,
-				072E63D6183C411A00127A57 /* VinhLong.png */,
-				072E63D7183C411A00127A57 /* VinhPhuc.png */,
-				072E63D8183C411A00127A57 /* YenBai.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -514,6 +333,8 @@
 		07356A0D1830A13E00D88EC6 = {
 			isa = PBXGroup;
 			children = (
+				075213271858496600509458 /* TSLanguageManager */,
+				075213241858471100509458 /* Localizable.strings */,
 				07104C55184F0D19007F669D /* MapKit.framework */,
 				07104C52184F09B1007F669D /* ImageIO.framework */,
 				07507A24184817E600E37E0D /* Network */,
@@ -556,6 +377,7 @@
 				07356A3F1830BBED00D88EC6 /* Default-568h@2x.png */,
 				07356A401830BBED00D88EC6 /* Default.png */,
 				07356A461830BD0400D88EC6 /* icon114.png */,
+				074309D018596A9F003EDC90 /* profile-1.jpg */,
 				07356A1F1830A13F00D88EC6 /* iTravel */,
 				07356A181830A13E00D88EC6 /* Frameworks */,
 				07356A171830A13E00D88EC6 /* Products */,
@@ -588,6 +410,7 @@
 			children = (
 				07356A281830A13F00D88EC6 /* iTravelAppDelegate.h */,
 				07356A291830A13F00D88EC6 /* iTravelAppDelegate.m */,
+				0752132E18586CF100509458 /* TourList */,
 				07356A341830A13F00D88EC6 /* MainStoryboard_iPad.storyboard */,
 				07356A311830A13F00D88EC6 /* MainStoryboard_iPhone.storyboard */,
 				07507A371848825C00E37E0D /* History */,
@@ -618,6 +441,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		074309C918594F68003EDC90 /* Listtour */ = {
+			isa = PBXGroup;
+			children = (
+				074309CA18594F94003EDC90 /* ListTourCell.h */,
+				074309CB18594F94003EDC90 /* ListTourCell.m */,
+			);
+			name = Listtour;
+			sourceTree = "<group>";
+		};
 		07497AF5183B117F008A2D8B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +461,7 @@
 		07497AF6183B1189008A2D8B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				074309C918594F68003EDC90 /* Listtour */,
 				07A71A2F1846E3A8009F4A2B /* Settings */,
 				07A71A2E1846E397009F4A2B /* News */,
 			);
@@ -702,6 +535,27 @@
 				07534D2D1833727000AD9DE0 /* HistoryViewController.m */,
 			);
 			name = History;
+			sourceTree = "<group>";
+		};
+		075213271858496600509458 /* TSLanguageManager */ = {
+			isa = PBXGroup;
+			children = (
+				075213281858496600509458 /* TSLanguageManager.h */,
+				075213291858496600509458 /* TSLanguageManager.m */,
+			);
+			path = TSLanguageManager;
+			sourceTree = "<group>";
+		};
+		0752132E18586CF100509458 /* TourList */ = {
+			isa = PBXGroup;
+			children = (
+				074309CD18595080003EDC90 /* ListTourViewController.h */,
+				074309CE18595080003EDC90 /* ListTourViewController.m */,
+				074309D21859B954003EDC90 /* DetailTourViewController.h */,
+				074309D31859B954003EDC90 /* DetailTourViewController.m */,
+				074309D51859BD12003EDC90 /* favourites.plist */,
+			);
+			name = TourList;
 			sourceTree = "<group>";
 		};
 		07A71A2D1846E317009F4A2B /* News */ = {
@@ -795,6 +649,7 @@
 				07356A431830BBED00D88EC6 /* Default.png in Resources */,
 				07356A441830BBED00D88EC6 /* Default@2x.png in Resources */,
 				07356A471830BD0400D88EC6 /* icon57.png in Resources */,
+				074309D61859BD12003EDC90 /* favourites.plist in Resources */,
 				07356A481830BD0400D88EC6 /* icon114.png in Resources */,
 				074ABE4B1831C9C400694174 /* 003_3.png in Resources */,
 				074ABE4C1831C9C400694174 /* 003.png in Resources */,
@@ -814,76 +669,9 @@
 				073E1FAA1834B041009C8ADF /* close.png in Resources */,
 				073E1FAD1834B6D6009C8ADF /* tick_blue.png in Resources */,
 				073E1FAE1834B6D6009C8ADF /* tick_blue@2x.png in Resources */,
-				072E63D9183C411A00127A57 /* AnGiang.png in Resources */,
-				072E63DA183C411A00127A57 /* BacGiang.png in Resources */,
-				072E63DB183C411A00127A57 /* BacKan.png in Resources */,
-				072E63DC183C411A00127A57 /* Baclieu.png in Resources */,
-				072E63DD183C411A00127A57 /* BacNinh.png in Resources */,
-				072E63DE183C411A00127A57 /* BaRia_VungTau.png in Resources */,
-				072E63DF183C411A00127A57 /* BenTre.png in Resources */,
-				072E63E0183C411A00127A57 /* BinhDinh.png in Resources */,
-				072E63E1183C411A00127A57 /* BinhDuong.png in Resources */,
-				072E63E2183C411A00127A57 /* BinhPHuoc.png in Resources */,
-				072E63E3183C411A00127A57 /* BinhThuan.png in Resources */,
-				072E63E4183C411A00127A57 /* Camau.png in Resources */,
-				072E63E5183C411A00127A57 /* CanTho.png in Resources */,
-				072E63E6183C411A00127A57 /* CaoBang.png in Resources */,
-				072E63E7183C411A00127A57 /* ConDao.png in Resources */,
-				072E63E8183C411A00127A57 /* DacLac.png in Resources */,
-				072E63E9183C411A00127A57 /* DacNong.png in Resources */,
-				072E63EA183C411A00127A57 /* DaNang.png in Resources */,
 				07CF91771850567800805A55 /* config.plist in Resources */,
-				072E63EB183C411A00127A57 /* DaoPhuQuoc.png in Resources */,
-				072E63EC183C411A00127A57 /* DienBienPhu.png in Resources */,
-				072E63ED183C411A00127A57 /* DongNai.png in Resources */,
-				072E63EE183C411A00127A57 /* DongThap.png in Resources */,
-				072E63EF183C411A00127A57 /* GiaLai.png in Resources */,
-				072E63F0183C411A00127A57 /* HaGiang.png in Resources */,
-				072E63F1183C411A00127A57 /* HaiDuong.png in Resources */,
-				072E63F2183C411A00127A57 /* HaiPhong.png in Resources */,
-				072E63F3183C411A00127A57 /* HaNam.png in Resources */,
-				072E63F4183C411A00127A57 /* HaNoi.png in Resources */,
-				072E63F5183C411A00127A57 /* HaTay.png in Resources */,
-				072E63F6183C411A00127A57 /* HaTinh.png in Resources */,
-				072E63F7183C411A00127A57 /* HoaBinh.png in Resources */,
-				072E63F8183C411A00127A57 /* Hue.png in Resources */,
-				072E63F9183C411A00127A57 /* HungYen.png in Resources */,
-				072E63FA183C411A00127A57 /* KhanhHoa.png in Resources */,
-				072E63FB183C411A00127A57 /* KienGiang.png in Resources */,
-				072E63FC183C411A00127A57 /* KonTum.png in Resources */,
-				072E63FD183C411A00127A57 /* LaiChau.png in Resources */,
-				072E63FE183C411A00127A57 /* LamDong.png in Resources */,
-				072E63FF183C411A00127A57 /* LangSon.png in Resources */,
-				072E6400183C411A00127A57 /* LaoCai.png in Resources */,
-				072E6401183C411A00127A57 /* LongAn.png in Resources */,
-				072E6402183C411A00127A57 /* NamDinh.png in Resources */,
-				072E6403183C411A00127A57 /* NgheAn.png in Resources */,
+				075213221858471100509458 /* Localizable.strings in Resources */,
 				07516B251851BCC8003CBA4B /* MainStoryboard_iPhone.storyboard in Resources */,
-				072E6404183C411A00127A57 /* NinhBinh.png in Resources */,
-				072E6405183C411A00127A57 /* NinhThuan.png in Resources */,
-				072E6406183C411A00127A57 /* PhuTho.png in Resources */,
-				072E6407183C411A00127A57 /* PhuYen.png in Resources */,
-				072E6408183C411A00127A57 /* QuanDaoHoangSa.png in Resources */,
-				072E6409183C411A00127A57 /* QuanDaoTruongSa.png in Resources */,
-				072E640A183C411A00127A57 /* QuangBinh.png in Resources */,
-				072E640B183C411A00127A57 /* QuangNam.png in Resources */,
-				072E640C183C411A00127A57 /* QuangNgai.png in Resources */,
-				072E640D183C411A00127A57 /* QuangNinh.png in Resources */,
-				072E640E183C411A00127A57 /* QuangTri.png in Resources */,
-				072E640F183C411A00127A57 /* SocTrang.png in Resources */,
-				072E6410183C411A00127A57 /* SonLa.png in Resources */,
-				072E6411183C411A00127A57 /* TayNinh.png in Resources */,
-				072E6412183C411A00127A57 /* ThaiBinh.png in Resources */,
-				072E6413183C411A00127A57 /* ThaiNguyen.png in Resources */,
-				072E6414183C411A00127A57 /* ThanhHoa.png in Resources */,
-				072E6415183C411A00127A57 /* TienGiang.png in Resources */,
-				072E6416183C411A00127A57 /* TPHCM.png in Resources */,
-				072E6417183C411A00127A57 /* TraVinh.png in Resources */,
-				072E6418183C411A00127A57 /* TuyenQuang.png in Resources */,
-				072E6419183C411A00127A57 /* VinhLong.png in Resources */,
-				072E641A183C411A00127A57 /* VinhPhuc.png in Resources */,
-				072E641B183C411A00127A57 /* YenBai.png in Resources */,
-				072E641D183C61E500127A57 /* BAN DO 62 TINH.png in Resources */,
 				0745EB981843025E00CC4070 /* back.png in Resources */,
 				0745EB9A1843249300CC4070 /* language.png in Resources */,
 				0708FB7A184580E1006B7296 /* tv_1.png in Resources */,
@@ -892,6 +680,7 @@
 				07A19E131845FC7500FDBD55 /* ipad-arrow-selected.png in Resources */,
 				07A19E171845FC8B00FDBD55 /* ipad-arrow-selected@2x.png in Resources */,
 				07A19E181845FC8B00FDBD55 /* ipad-arrow.png in Resources */,
+				074309D118596A9F003EDC90 /* profile-1.jpg in Resources */,
 				07A19E191845FC8B00FDBD55 /* ipad-arrow@2x.png in Resources */,
 				07A71A3318473CF1009F4A2B /* File-48.png in Resources */,
 				07A71A3418473CF1009F4A2B /* Gift-48.png in Resources */,
@@ -923,15 +712,19 @@
 				0708FB80184593FE006B7296 /* MBProgressHUD.m in Sources */,
 				07A19E0C1845B66F00FDBD55 /* NewsCell.m in Sources */,
 				07A19E111845EFA700FDBD55 /* NewsiTravelCell.m in Sources */,
+				074309D41859B954003EDC90 /* DetailTourViewController.m in Sources */,
 				07A71A2C1846E300009F4A2B /* DetailNewsiTravelViewController.m in Sources */,
 				07507A2C18481A6800E37E0D /* Reachability.m in Sources */,
+				074309CC18594F94003EDC90 /* ListTourCell.m in Sources */,
 				07104C44184F0973007F669D /* MKAnnotationView+WebCache.m in Sources */,
 				07104C45184F0973007F669D /* NSData+GIF.m in Sources */,
 				07104C46184F0973007F669D /* SDImageCache.m in Sources */,
 				07104C47184F0973007F669D /* SDWebImageCompat.m in Sources */,
 				07104C48184F0973007F669D /* SDWebImageDecoder.m in Sources */,
+				0752132A1858496600509458 /* TSLanguageManager.m in Sources */,
 				07104C49184F0973007F669D /* SDWebImageDownloader.m in Sources */,
 				07104C4A184F0973007F669D /* SDWebImageDownloaderOperation.m in Sources */,
+				074309CF18595080003EDC90 /* ListTourViewController.m in Sources */,
 				07104C4B184F0973007F669D /* SDWebImageManager.m in Sources */,
 				07104C4C184F0973007F669D /* SDWebImagePrefetcher.m in Sources */,
 				07104C4D184F0973007F669D /* UIButton+WebCache.m in Sources */,
@@ -949,6 +742,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				07356A231830A13F00D88EC6 /* en */,
+				0752131F185846BA00509458 /* vi-VN */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -958,6 +752,7 @@
 			children = (
 				0745EBA11843447400CC4070 /* Base */,
 				073C7FBD1844421000023CF2 /* en */,
+				0752131E185846BA00509458 /* vi-VN */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -966,8 +761,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				0745EBA21843447400CC4070 /* Base */,
+				0752131D185846B900509458 /* vi-VN */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		075213241858471100509458 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075213231858471100509458 /* Base */,
+				075213251858472B00509458 /* vi-VN */,
+				075213261858472E00509458 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1034,6 +840,7 @@
 		07356A3D1830A13F00D88EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
 				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";
@@ -1047,6 +854,7 @@
 		07356A3E1830A13F00D88EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTravel/iTravel-Prefix.pch";
 				INFOPLIST_FILE = "iTravel/iTravel-Info.plist";

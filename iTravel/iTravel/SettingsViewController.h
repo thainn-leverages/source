@@ -12,8 +12,12 @@
 
     NSString *strlang;
     NSUserDefaults *defaults;// = [NSUserDefaults standardUserDefaults];
+    
+    NSString *strsave;
 }
 
 @property (nonatomic, strong) IBOutlet UITableView* tableView;
+//@property (assign)  int rowsave;
+//@property (nonatomic, strong)  NSString *rowsave;
 
 @end

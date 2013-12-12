@@ -1,18 +1,18 @@
 //
-//  HistoryViewController.m
+//  DetailTourViewController.m
 //  iTravel
 //
-//  Created by Thainq on 13/11/2013.
+//  Created by Thainq on 12/12/2013.
 //  Copyright (c) 2013 Thainq. All rights reserved.
 //
 
-#import "HistoryViewController.h"
+#import "DetailTourViewController.h"
 
-@interface HistoryViewController ()
+@interface DetailTourViewController ()
 
 @end
 
-@implementation HistoryViewController
+@implementation DetailTourViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,9 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)back:(id)sender {
+      [self.navigationController popViewControllerAnimated:TRUE];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

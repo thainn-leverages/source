@@ -10,6 +10,7 @@
 #import "SettingsViewController.h"
 
 
+
 @interface LanguageList ()
 
 @end
@@ -34,6 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    defaults = [NSUserDefaults standardUserDefaults];
   // self.tableView.backgroundColor = [UIColor clearColor];
 // self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"c-2-1-1.png"]];
     langlist = [NSArray arrayWithObjects:@"Việt Nam", @"English", nil];
@@ -133,10 +135,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
  
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-   // int rows = indexPath.row;
-    [defaults setInteger:indexPath.row forKey:@"langset"];
+  //  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int rows = indexPath.row;
+
+    
+    [defaults setInteger:rows forKey:@"langset"];
     [defaults synchronize];
+   /// NSLog(@"UserDefault :%@",[defaults objectForKey:@"langset"]);
 
     [self.navigationController popViewControllerAnimated:YES];
     
