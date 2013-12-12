@@ -7,6 +7,8 @@
 //
 
 #import "ListTourViewController.h"
+#import "ListTourCell.h"
+
 
 @interface ListTourViewController ()
 
@@ -14,9 +16,9 @@
 
 @implementation ListTourViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -26,7 +28,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
 	// Do any additional setup after loading the view.
+}
+- (IBAction)back:(id)sender {
+     [self.navigationController popViewControllerAnimated:TRUE];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ListTourCell* cell = [tableView dequeueReusableCellWithIdentifier:@"TourCell"];
+    
+    cell.fromLabel.text = @"Tp. Hồ Chí Minh";
+    cell.toLabel.text = @"141213VN	Bắc Kinh -Tô Châu-Vô Tích -Hàng Châu - Thượng Hải (ECO - Siêu tiết kiệm) ";
+    
+    cell.dateLabel.text = @"2014-05-01";
+    cell.likeCountLabel.text = @"2014-04-27";
+    cell.priceLabel.text = @"20.000.000 VND";
+    
+   // NSString* profileImageName = self.profileImages[indexPath.row%self.profileImages.count];
+    cell.profileImageView.image = [UIImage imageNamed:@"profile-1.jpg"];
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning

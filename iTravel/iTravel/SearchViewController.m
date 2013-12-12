@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ListTourViewController.h"
 
 @interface SearchViewController ()
 
@@ -59,7 +60,14 @@
     priceData      = [NSMutableArray arrayWithObjects:@"---All---",@"Dưới 3 triệu",@"3-7 triệu", @"7-12 triệu", @"12-15 triệu", @"15-18 triệu", @"18-22 triệu", @"22-32 triệu",@"Trên 32 triệu", nil];
 
 }
-
+/*
+- (IBAction)Search:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    ListTourViewController *viewController = (ListTourViewController *)[storyboard instantiateViewControllerWithIdentifier:@"listtour"];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+*/
 - (void)showPicker: (int ) tag{
     
     /* first create a UIActionSheet, where you define a title, delegate and a button to close the sheet again */

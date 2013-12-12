@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "NewsCell.h"
 
-@interface DetailNewsiTravelViewController : UIViewController
+@interface DetailNewsiTravelViewController : UIViewController{
+
+ NSString *strlang;
+}
 
 @property (nonatomic, strong) NSString *news;
 @property (weak, nonatomic) IBOutlet UIWebView *detailweb;

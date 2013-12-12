@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListTourViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
-
-}
+@interface ListTourViewController : UITableViewController
 
 @end

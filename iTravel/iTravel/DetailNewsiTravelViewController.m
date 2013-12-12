@@ -28,9 +28,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //NSLog(@"%@", news);
-    self.navigationItem.title =@"Tin Chi Tiết";
     
+    [self ReadDataFromPlist];
+    
+    if([strlang integerValue] == 0 ){
+        
+        self.navigationItem.title = @"Tin Chi Tiết";
+        
+    }
+    else{
+        self.navigationItem.title = @"Detail News";
+    }
+
     [detailweb loadHTMLString:news baseURL:nil];
    
 	// Do any additional setup after loading the view.
@@ -41,6 +50,57 @@
     [self.navigationController popViewControllerAnimated:TRUE];
     
 }
+
+- (void)ReadDataFromPlist{
+    
+    //Run on mobile
+    /*
+     NSArray *sysPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory ,NSUserDomainMask, YES);
+     
+     NSString *documentsDirectory = [sysPaths objectAtIndex:0];
+     
+     NSString *filePath =  [documentsDirectory stringByAppendingPathComponent:@"config.plist"];
+     
+     NSError *error;
+     
+     
+     NSFileManager *fileManager = [NSFileManager defaultManager];
+     
+     if (![fileManager fileExistsAtPath: filePath]) //4
+     
+     {
+     NSString *bundle = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]; //5
+     
+     [fileManager copyItemAtPath:bundle toPath: filePath error:&error];
+     
+     
+     }
+     
+     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+     */
+    
+    //Run on simulator
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    
+    NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"config.plist"];
+    
+    NSString *bundleFile = [[NSBundle mainBundle]pathForResource:@"config" ofType:@"plist"];
+    
+    
+    //copy the file from the bundle to the doc directory
+    [[NSFileManager defaultManager]copyItemAtPath:bundleFile toPath:plistPath error:nil];
+    
+    //End run on simulator
+    NSMutableDictionary * propertyDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    strlang = [propertyDict objectForKey:@"Language"];
+    
+    //
+    
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning
